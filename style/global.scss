@@ -1,0 +1,17 @@
+html {
+  background-color: #000000;
+}
+
+#app {
+  margin: 0 auto;
+  max-width: 960px;
+  background-color: $-uhv-color-bg;
+  transform: translateZ(0);
+  overflow: hidden;
+}
+
+page {
+  height: 100%;
+  color: $-uhv-color-text;
+  font-size: 28rpx;
+}

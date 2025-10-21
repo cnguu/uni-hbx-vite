@@ -1,0 +1,7 @@
+# 每次 git pull 之后安装依赖
+
+echo 【开始】安装依赖
+
+pnpm i
+
+echo 【结束】安装依赖

@@ -1,0 +1,25 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "include": ["env.d.ts", "./**/*", "./**/*.vue"],
+  "exclude": ["**/__tests__/*"],
+    "compilerOptions": {
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "moduleResolution": "Bundler",
+        "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+        "paths": {
+            "@/*": ["./*"]
+        },
+        "types": [
+            "@dcloudio/types",
+            "@uni-helper/uni-types",
+            "@types/wechat-miniprogram",
+            "wot-design-uni/global.d.ts",
+            "z-paging/types",
+            "./type/**/*.d.ts"
+        ]
+    },
+    "vueCompilerOptions": {
+        "plugins": ["@uni-helper/uni-types/volar-plugin"]
+    }
+}

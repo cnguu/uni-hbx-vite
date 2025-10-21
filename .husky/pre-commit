@@ -1,0 +1,7 @@
+# 根据 lint-staged.config.js 配置格式化和提交代码
+
+echo 【开始】pre-commit hook.
+
+pnpm exec lint-staged
+
+echo 【结束】pre-commit hook.

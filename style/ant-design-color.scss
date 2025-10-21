@@ -1,0 +1,136 @@
+//https://ant.design/docs/spec/colors-cn
+
+$-ant-color-red-1: var(--ant-color-red-1, #fff1f0) !default;
+$-ant-color-red-2: var(--ant-color-red-2, #ffccc7) !default;
+$-ant-color-red-3: var(--ant-color-red-3, #ffa39e) !default;
+$-ant-color-red-4: var(--ant-color-red-4, #ff7875) !default;
+$-ant-color-red-5: var(--ant-color-red-5, #ff4d4f) !default;
+$-ant-color-red-6: var(--ant-color-red-6, #f5222d) !default;
+$-ant-color-red-7: var(--ant-color-red-7, #cf1322) !default;
+$-ant-color-red-8: var(--ant-color-red-8, #a8071a) !default;
+$-ant-color-red-9: var(--ant-color-red-9, #820014) !default;
+$-ant-color-red-10: var(--ant-color-red-10, #5c0011) !default;
+
+$-ant-color-volcano-1: var(--ant-color-volcano-1, #fff2e8) !default;
+$-ant-color-volcano-2: var(--ant-color-volcano-2, #ffd8bf) !default;
+$-ant-color-volcano-3: var(--ant-color-volcano-3, #ffbb96) !default;
+$-ant-color-volcano-4: var(--ant-color-volcano-4, #ff9c6e) !default;
+$-ant-color-volcano-5: var(--ant-color-volcano-5, #ff7a45) !default;
+$-ant-color-volcano-6: var(--ant-color-volcano-6, #fa541c) !default;
+$-ant-color-volcano-7: var(--ant-color-volcano-7, #d4380d) !default;
+$-ant-color-volcano-8: var(--ant-color-volcano-8, #ad2102) !default;
+$-ant-color-volcano-9: var(--ant-color-volcano-9, #871400) !default;
+$-ant-color-volcano-10: var(--ant-color-volcano-10, #610b00) !default;
+
+$-ant-color-orange-1: var(--ant-color-orange-1, #fff7e6) !default;
+$-ant-color-orange-2: var(--ant-color-orange-2, #ffe7ba) !default;
+$-ant-color-orange-3: var(--ant-color-orange-3, #ffd591) !default;
+$-ant-color-orange-4: var(--ant-color-orange-4, #ffc069) !default;
+$-ant-color-orange-5: var(--ant-color-orange-5, #ffa940) !default;
+$-ant-color-orange-6: var(--ant-color-orange-6, #fa8c16) !default;
+$-ant-color-orange-7: var(--ant-color-orange-7, #d46b08) !default;
+$-ant-color-orange-8: var(--ant-color-orange-8, #ad4e00) !default;
+$-ant-color-orange-9: var(--ant-color-orange-9, #873800) !default;
+$-ant-color-orange-10: var(--ant-color-orange-10, #612500) !default;
+
+$-ant-color-gold-1: var(--ant-color-gold-1, #fffbe6) !default;
+$-ant-color-gold-2: var(--ant-color-gold-2, #fff1b8) !default;
+$-ant-color-gold-3: var(--ant-color-gold-3, #ffe58f) !default;
+$-ant-color-gold-4: var(--ant-color-gold-4, #ffd666) !default;
+$-ant-color-gold-5: var(--ant-color-gold-5, #ffc53d) !default;
+$-ant-color-gold-6: var(--ant-color-gold-6, #faad14) !default;
+$-ant-color-gold-7: var(--ant-color-gold-7, #d48806) !default;
+$-ant-color-gold-8: var(--ant-color-gold-8, #ad6800) !default;
+$-ant-color-gold-9: var(--ant-color-gold-9, #874d00) !default;
+$-ant-color-gold-10: var(--ant-color-gold-10, #613400) !default;
+
+$-ant-color-yellow-1: var(--ant-color-yellow-1, #feffe6) !default;
+$-ant-color-yellow-2: var(--ant-color-yellow-2, #ffffb8) !default;
+$-ant-color-yellow-3: var(--ant-color-yellow-3, #fffb8f) !default;
+$-ant-color-yellow-4: var(--ant-color-yellow-4, #fff566) !default;
+$-ant-color-yellow-5: var(--ant-color-yellow-5, #ffec3d) !default;
+$-ant-color-yellow-6: var(--ant-color-yellow-6, #fadb14) !default;
+$-ant-color-yellow-7: var(--ant-color-yellow-7, #d4b106) !default;
+$-ant-color-yellow-8: var(--ant-color-yellow-8, #ad8b00) !default;
+$-ant-color-yellow-9: var(--ant-color-yellow-9, #876800) !default;
+$-ant-color-yellow-10: var(--ant-color-yellow-10, #614700) !default;
+
+$-ant-color-lime-1: var(--ant-color-lime-1, #fcffe6) !default;
+$-ant-color-lime-2: var(--ant-color-lime-2, #f4ffb8) !default;
+$-ant-color-lime-3: var(--ant-color-lime-3, #eaff8f) !default;
+$-ant-color-lime-4: var(--ant-color-lime-4, #d3f261) !default;
+$-ant-color-lime-5: var(--ant-color-lime-5, #bae637) !default;
+$-ant-color-lime-6: var(--ant-color-lime-6, #a0d911) !default;
+$-ant-color-lime-7: var(--ant-color-lime-7, #7cb305) !default;
+$-ant-color-lime-8: var(--ant-color-lime-8, #5b8c00) !default;
+$-ant-color-lime-9: var(--ant-color-lime-9, #3f6600) !default;
+$-ant-color-lime-10: var(--ant-color-lime-10, #254000) !default;
+
+$-ant-color-green-1: var(--ant-color-green-1, #f6ffed) !default;
+$-ant-color-green-2: var(--ant-color-green-2, #d9f7be) !default;
+$-ant-color-green-3: var(--ant-color-green-3, #b7eb8f) !default;
+$-ant-color-green-4: var(--ant-color-green-4, #95de64) !default;
+$-ant-color-green-5: var(--ant-color-green-5, #73d13d) !default;
+$-ant-color-green-6: var(--ant-color-green-6, #52c41a) !default;
+$-ant-color-green-7: var(--ant-color-green-7, #389e0d) !default;
+$-ant-color-green-8: var(--ant-color-green-8, #237804) !default;
+$-ant-color-green-9: var(--ant-color-green-9, #135200) !default;
+$-ant-color-green-10: var(--ant-color-green-10, #092b00) !default;
+
+$-ant-color-cyan-1: var(--ant-color-cyan-1, #e6fffb) !default;
+$-ant-color-cyan-2: var(--ant-color-cyan-2, #b5f5ec) !default;
+$-ant-color-cyan-3: var(--ant-color-cyan-3, #87e8de) !default;
+$-ant-color-cyan-4: var(--ant-color-cyan-4, #5cdbd3) !default;
+$-ant-color-cyan-5: var(--ant-color-cyan-5, #36cfc9) !default;
+$-ant-color-cyan-6: var(--ant-color-cyan-6, #13c2c2) !default;
+$-ant-color-cyan-7: var(--ant-color-cyan-7, #08979c) !default;
+$-ant-color-cyan-8: var(--ant-color-cyan-8, #006d75) !default;
+$-ant-color-cyan-9: var(--ant-color-cyan-9, #00474f) !default;
+$-ant-color-cyan-10: var(--ant-color-cyan-10, #002329) !default;
+
+$-ant-color-blue-1: var(--ant-color-blue-1, #e6f4ff) !default;
+$-ant-color-blue-2: var(--ant-color-blue-2, #bae0ff) !default;
+$-ant-color-blue-3: var(--ant-color-blue-3, #91caff) !default;
+$-ant-color-blue-4: var(--ant-color-blue-4, #69b1ff) !default;
+$-ant-color-blue-5: var(--ant-color-blue-5, #4096ff) !default;
+$-ant-color-blue-6: var(--ant-color-blue-6, #1677ff) !default;
+$-ant-color-blue-7: var(--ant-color-blue-7, #0958d9) !default;
+$-ant-color-blue-8: var(--ant-color-blue-8, #003eb3) !default;
+$-ant-color-blue-9: var(--ant-color-blue-9, #002c8c) !default;
+$-ant-color-blue-10: var(--ant-color-blue-10, #001d66) !default;
+
+$-ant-color-purple-1: var(--ant-color-purple-1, #f9f0ff) !default;
+$-ant-color-purple-2: var(--ant-color-purple-2, #efdbff) !default;
+$-ant-color-purple-3: var(--ant-color-purple-3, #d3adf7) !default;
+$-ant-color-purple-4: var(--ant-color-purple-4, #b37feb) !default;
+$-ant-color-purple-5: var(--ant-color-purple-5, #9254de) !default;
+$-ant-color-purple-6: var(--ant-color-purple-6, #722ed1) !default;
+$-ant-color-purple-7: var(--ant-color-purple-7, #531dab) !default;
+$-ant-color-purple-8: var(--ant-color-purple-8, #391085) !default;
+$-ant-color-purple-9: var(--ant-color-purple-9, #22075e) !default;
+$-ant-color-purple-10: var(--ant-color-purple-10, #120338) !default;
+
+$-ant-color-magenta-1: var(--ant-color-magenta-1, #fff0f6) !default;
+$-ant-color-magenta-2: var(--ant-color-magenta-2, #ffd6e7) !default;
+$-ant-color-magenta-3: var(--ant-color-magenta-3, #ffadd2) !default;
+$-ant-color-magenta-4: var(--ant-color-magenta-4, #ff85c0) !default;
+$-ant-color-magenta-5: var(--ant-color-magenta-5, #f759ab) !default;
+$-ant-color-magenta-6: var(--ant-color-magenta-6, #eb2f96) !default;
+$-ant-color-magenta-7: var(--ant-color-magenta-7, #c41d7f) !default;
+$-ant-color-magenta-8: var(--ant-color-magenta-8, #9e1068) !default;
+$-ant-color-magenta-9: var(--ant-color-magenta-9, #780650) !default;
+$-ant-color-magenta-10: var(--ant-color-magenta-10, #520339) !default;
+
+$-ant-color-gray-1: var(--ant-color-gray-1, #ffffff) !default;
+$-ant-color-gray-2: var(--ant-color-gray-2, #fafafa) !default;
+$-ant-color-gray-3: var(--ant-color-gray-3, #f5f5f5) !default;
+$-ant-color-gray-4: var(--ant-color-gray-4, #f0f0f0) !default;
+$-ant-color-gray-5: var(--ant-color-gray-5, #d9d9d9) !default;
+$-ant-color-gray-6: var(--ant-color-gray-6, #bfbfbf) !default;
+$-ant-color-gray-7: var(--ant-color-gray-7, #8c8c8c) !default;
+$-ant-color-gray-8: var(--ant-color-gray-8, #595959) !default;
+$-ant-color-gray-9: var(--ant-color-gray-9, #434343) !default;
+$-ant-color-gray-10: var(--ant-color-gray-10, #262626) !default;
+$-ant-color-gray-11: var(--ant-color-gray-11, #1f1f1f) !default;
+$-ant-color-gray-12: var(--ant-color-gray-12, #141414) !default;
+$-ant-color-gray-13: var(--ant-color-gray-13, #000000) !default;

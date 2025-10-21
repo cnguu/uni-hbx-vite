@@ -1,0 +1,57 @@
+{
+  "globalStyle": {
+    "navigationStyle": "custom",
+    "app-plus": {
+      "bounce": "none"
+    }
+  },
+  "tabBar": {
+    "list": [
+      {
+        "visible": false,
+        "pagePath": "page/launch/index.page",
+        "text": "启动"
+      },
+      {
+        "visible": false,
+        "pagePath": "page/login/index.page",
+        "text": "登录"
+      },
+      {
+        "visible": false,
+        "pagePath": "page/home/index.page",
+        "text": "首页"
+      }
+    ]
+  },
+  "pages": [
+    {
+      "path": "page/launch/index.page",
+      "type": "home",
+      "style": {
+        "navigationBarTitleText": "启动",
+        "navigationStyle": "custom"
+      },
+      "name": "PAGE_LAUNCH_INDEX_PAGE"
+    },
+    {
+      "path": "page/home/index.page",
+      "type": "page",
+      "style": {
+        "navigationBarTitleText": "首页",
+        "navigationStyle": "custom"
+      },
+      "name": "PAGE_HOME_INDEX_PAGE"
+    },
+    {
+      "path": "page/login/index.page",
+      "type": "page",
+      "style": {
+        "navigationBarTitleText": "登录",
+        "navigationStyle": "custom"
+      },
+      "name": "PAGE_LOGIN_INDEX_PAGE"
+    }
+  ],
+  "subPackages": []
+}

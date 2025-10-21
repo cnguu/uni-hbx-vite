@@ -1,0 +1,8 @@
+uni_modules/
+manifest.json
+pages.json
+uni-pages.d.ts
+auto-import.d.ts
+components.d.ts
+.eslintrc-auto-import.json
+unpackage/

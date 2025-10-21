@@ -1,0 +1,35 @@
+// 全局变量
+//@import 'wot-design-uni/components/common/abstracts/variable.scss';
+@import '@/style/ant-design-color.scss';
+
+$uhv-namespace: 'uhv';
+
+// 主题色
+$-uhv-color-theme-1: var(--uhv-color-theme-1, #e6f4ff) !default;
+$-uhv-color-theme-2: var(--uhv-color-theme-2, #bae0ff) !default;
+$-uhv-color-theme-3: var(--uhv-color-theme-3, #91caff) !default;
+$-uhv-color-theme-4: var(--uhv-color-theme-4, #69b1ff) !default;
+$-uhv-color-theme-5: var(--uhv-color-theme-5, #4096ff) !default;
+$-uhv-color-theme-6: var(--uhv-color-theme-6, #1677ff) !default;
+$-uhv-color-theme-7: var(--uhv-color-theme-7, #0958d9) !default;
+$-uhv-color-theme-8: var(--uhv-color-theme-8, #003eb3) !default;
+$-uhv-color-theme-9: var(--uhv-color-theme-9, #002c8c) !default;
+$-uhv-color-theme-10: var(--uhv-color-theme-10, #001d66) !default;
+
+// 字体默认色
+$-uhv-color-text: var(--uhv-color-text, #212b36) !default;
+// 字体次级色
+$-uhv-color-secondary: var(--uhv-color-secondary, #637381) !default;
+// 字体辅助色
+$-uhv-color-aid: var(--uhv-color-aid, #919eab) !default;
+// 字体提示、输入框文字
+$-uhv-color-tip: var(--uhv-color-input, #c4cdd5) !default;
+// 线条色
+$-uhv-color-divider: var(--uhv-color-divider, #f0f2f3) !default;
+
+// 页面背景色
+$-uhv-color-bg: var(--uhv-color-bg, #f9fafb) !default;
+// 主题背景色
+$-uhv-color-theme-bg: var(--uhv-color-theme-bg, #f3f8ff) !default;
+// 遮罩背景色
+$-uhv-mask-bg: var(--uhv-mask-bg, rgba(0, 0, 0, 0.5)) !default;
