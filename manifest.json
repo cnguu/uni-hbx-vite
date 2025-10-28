@@ -1,6 +1,6 @@
 {
   "name": "UNI-HBX-VITE",
-  "appid": "__UNI__123",
+  "appid": "__UNI__33ED0E8",
   "description": "",
   "versionName": "1.0.0",
   "versionCode": "1",
@@ -15,48 +15,10 @@
       "autoclose": true,
       "delay": 0
     },
-    "modules": {
-      "Camera": {},
-      "Barcode": {},
-      "Bluetooth": {},
-      "Push": {},
-      "Maps": {},
-      "OAuth": {},
-      "Record": {},
-      "VideoPlayer": {},
-      "Geolocation": {}
-    },
+    "modules": {},
     "distribute": {
       "android": {
-        "permissions": [
-          "<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
-          "<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>",
-          "<uses-permission android:name=\"android.permission.VIBRATE\"/>",
-          "<uses-permission android:name=\"android.permission.READ_LOGS\"/>",
-          "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
-          "<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
-          "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
-          "<uses-permission android:name=\"android.permission.CAMERA\"/>",
-          "<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>",
-          "<uses-permission android:name=\"android.permission.CALL_PHONE\"/>",
-          "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>",
-          "<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>",
-          "<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
-          "<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
-          "<uses-feature android:name=\"android.hardware.camera\"/>",
-          "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>",
-          "<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>",
-          "<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>",
-          "<uses-permission android:name=\"android.permission.POST_NOTIFICATIONS\"/>",
-          "<uses-permission android:name=\"android.permission.READ_SYNC_SETTINGS\"/>",
-          "<uses-permission android:name=\"android.permission.READ_EXTERNAL_STORAGE\"/>",
-          "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\"/>",
-          "<uses-permission android:name=\"android.permission.MANAGE_EXTERNAL_STORAGE\"/>",
-          "<uses-permission android:name=\"android.permission.READ_MEDIA_IMAGES\"/>",
-          "<uses-permission android:name=\"android.permission.READ_MEDIA_VIDEO\"/>",
-          "<uses-permission android:name=\"android.permission.FOREGROUND_SERVICE\"/>",
-          "<uses-permission android:name=\"android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS\"/>"
-        ],
+        "permissions": [],
         "abiFilters": [
           "armeabi-v7a",
           "arm64-v8a"
@@ -81,117 +43,16 @@
       },
       "sdkConfigs": {
         "ad": {},
-        "push": {
-          "unipush": {
-            "icons": {
-              "push": {
-                "ldpi": "static/logo.png",
-                "mdpi": "static/logo.png",
-                "hdpi": "static/logo.png",
-                "xhdpi": "static/logo.png",
-                "xxhdpi": "static/logo.png"
-              },
-              "small": {
-                "hdpi": "static/logo.png",
-                "xhdpi": "static/logo.png",
-                "xxhdpi": "static/logo.png",
-                "ldpi": "static/logo.png",
-                "mdpi": "static/logo.png"
-              }
-            },
-            "offline": true,
-            "version": "2",
-            "hms": {},
-            "oppo": {},
-            "vivo": {},
-            "mi": {},
-            "meizu": {},
-            "honor": {}
-          }
-        },
-        "maps": {
-          "amap": {
-            "name": "a",
-            "appkey_ios": "a",
-            "appkey_android": "a"
-          }
-        },
-        "oauth": {
-          "weixin": {
-            "appid": "wx123",
-            "UniversalLinks": "https://uniappoauth.xxx.com/uni-universallinks/__UNI__123/"
-          },
-          "apple": {}
-        },
-        "geolocation": {
-          "system": {
-            "__platform__": [
-              "ios",
-              "android"
-            ]
-          },
-          "amap": {
-            "name": "a",
-            "__platform__": [
-              "ios",
-              "android"
-            ],
-            "appkey_ios": "a",
-            "appkey_android": "a"
-          }
-        }
+        "push": {},
+        "maps": {},
+        "oauth": {},
+        "geolocation": {}
       },
-      "icons": {
-        "android": {
-          "hdpi": "static/app/icons/72x72.png",
-          "xhdpi": "static/app/icons/96x96.png",
-          "xxhdpi": "static/app/icons/144x144.png",
-          "xxxhdpi": "static/app/icons/192x192.png"
-        },
-        "ios": {
-          "appstore": "static/app/icons/1024x1024.png",
-          "ipad": {
-            "app": "static/app/icons/76x76.png",
-            "app@2x": "static/app/icons/152x152.png",
-            "notification": "static/app/icons/20x20.png",
-            "notification@2x": "static/app/icons/40x40.png",
-            "proapp@2x": "static/app/icons/167x167.png",
-            "settings": "static/app/icons/29x29.png",
-            "settings@2x": "static/app/icons/58x58.png",
-            "spotlight": "static/app/icons/40x40.png",
-            "spotlight@2x": "static/app/icons/80x80.png"
-          },
-          "iphone": {
-            "app@2x": "static/app/icons/120x120.png",
-            "app@3x": "static/app/icons/180x180.png",
-            "notification@2x": "static/app/icons/40x40.png",
-            "notification@3x": "static/app/icons/60x60.png",
-            "settings@2x": "static/app/icons/58x58.png",
-            "settings@3x": "static/app/icons/87x87.png",
-            "spotlight@2x": "static/app/icons/80x80.png",
-            "spotlight@3x": "static/app/icons/120x120.png"
-          }
-        }
-      },
+      "icons": {},
       "splashscreen": {
         "androidStyle": "default",
-        "android": {
-          "hdpi": "static/app/splash.9.png",
-          "xhdpi": "static/app/splash.9.png",
-          "xxhdpi": "static/app/splash.9.png"
-        },
-        "iosStyle": "common",
-        "ios": {
-          "iphone": {
-            "portrait-896h@3x": "static/splash.png",
-            "portrait-896h@2x": "static/splash.png",
-            "iphonex": "static/splash.png",
-            "retina55": "static/splash.png",
-            "retina47": "static/splash.png",
-            "retina35": "static/splash.png"
-          }
-        },
-        "useOriginalMsgbox": true
+        "useOriginalMsgbox": true,
+        "iosStyle": "common"
       }
     },
     "compatible": {
@@ -225,13 +86,7 @@
   "fallbackLocale": "zh-Hans",
   "h5": {
     "sdkConfigs": {
-      "maps": {
-        "amap": {
-          "key": "a",
-          "securityJsCode": "a",
-          "serviceHost": ""
-        }
-      }
+      "maps": {}
     },
     "title": "UNI-HBX-VITE",
     "router": {

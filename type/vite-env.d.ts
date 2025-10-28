@@ -22,17 +22,6 @@ declare namespace Env {
     /** 路由基础路径 */
     readonly VITE_BASE_PATH: string
 
-    /** 高德地图 用户名 */
-    readonly VITE_AMAP_USERNAME: string
-    /** 高德地图 WEB KEY */
-    readonly VITE_AMAP_WEB_KEY: string
-    /** 高德地图 JS KEY */
-    readonly VITE_AMAP_JS_KEY: string
-    /** 高德地图 JS 安全密钥 */
-    readonly VITE_AMAP_JS_SECURITY_CODE: string
-    /** 高德地图 iOS KEY */
-    readonly VITE_AMAP_IOS_KEY: string
-
     /** 请求接口地址 */
     readonly VITE_API: string
     /** 请求接口地址公共前缀 */
