@@ -91,7 +91,7 @@ export default ({ command, mode }: ConfigEnv) => {
       }),
       UniKuRoot({
         rootFileName: 'Root',
-        excludePages: ['page/launch/index.page.vue'],
+        excludePages: ['page/launch/index-page.vue'],
       }),
       UniManifest(),
       UnoCSS(),

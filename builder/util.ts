@@ -100,7 +100,7 @@ export function beautifyJson(obj: any, indent = 2) {
 export function scanPageFilter(ctx: PageContext, inKey: 'pages' | 'subPages') {
   const keysToRemove = []
   for (const key of ctx[inKey].keys()) {
-    if (!key.endsWith('.page.vue')) {
+    if (!key.endsWith('-page.vue')) {
       keysToRemove.push(key)
     }
   }

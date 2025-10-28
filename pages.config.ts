@@ -11,17 +11,17 @@ export default defineUniPages({
     list: [
       {
         visible: false,
-        pagePath: 'page/launch/index.page',
+        pagePath: 'page/launch/index-page',
         text: '启动',
       },
       {
         visible: false,
-        pagePath: 'page/login/index.page',
+        pagePath: 'page/login/index-page',
         text: '登录',
       },
       {
         visible: false,
-        pagePath: 'page/home/index.page',
+        pagePath: 'page/home/index-page',
         text: '首页',
       },
     ],
