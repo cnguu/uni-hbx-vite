@@ -16,6 +16,8 @@ export default defineConfigWithVueTs(
     'uni-pages.d.ts',
     'auto-import.d.ts',
     'components.d.ts',
+    'async-component.d.ts',
+    'async-import.d.ts',
     'eslintrc-auto-import.json',
   ]),
   unoCss,

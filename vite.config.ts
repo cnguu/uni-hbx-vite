@@ -4,6 +4,7 @@ import { isWeb } from '@uni-helper/uni-env'
 import Components from '@uni-helper/vite-plugin-uni-components'
 import UniManifest from '@uni-helper/vite-plugin-uni-manifest'
 import UniPages from '@uni-helper/vite-plugin-uni-pages'
+import Optimization from '@uni-ku/bundle-optimizer'
 import UniKuRoot from '@uni-ku/root'
 import UnoCSS from '@unocss/vite'
 import chalk from 'chalk'
@@ -72,7 +73,7 @@ export default ({ command, mode }: ConfigEnv) => {
       }),
       UniPages({
         dir: 'page',
-        subPackages: [],
+        subPackages: ['page-a'],
         exclude: ['**/components/**/**.*'],
         routeBlockLang: 'jsonc',
         dts: './type/uni-pages.d.ts',
@@ -88,6 +89,30 @@ export default ({ command, mode }: ConfigEnv) => {
         onAfterWriteFile(ctx) {
           writePageConst(ctx)
         },
+      }),
+      Optimization({
+        enable: {
+          optimization: true,
+          'async-import': true,
+          'async-component': true,
+        },
+        dts: {
+          enable: true,
+          base: './type',
+          'async-import': {
+            enable: true,
+            base: './type',
+            name: 'async-import.d.ts',
+            path: './type/async-import.d.ts',
+          },
+          'async-component': {
+            enable: true,
+            base: './type',
+            name: 'async-component.d.ts',
+            path: './type//async-component.d.ts',
+          },
+        },
+        logger: false,
       }),
       UniKuRoot({
         rootFileName: 'Root',

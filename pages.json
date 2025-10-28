@@ -53,5 +53,20 @@
       "name": "PAGE_LOGIN_INDEX_PAGE"
     }
   ],
-  "subPackages": []
+  "subPackages": [
+    {
+      "root": "page-a",
+      "pages": [
+        {
+          "path": "index-page",
+          "type": "page",
+          "style": {
+            "navigationBarTitleText": "分包",
+            "navigationStyle": "custom"
+          },
+          "name": "PAGE_A_INDEX_PAGE"
+        }
+      ]
+    }
+  ]
 }

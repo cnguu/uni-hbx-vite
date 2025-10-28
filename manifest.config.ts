@@ -83,6 +83,7 @@ export default defineManifestConfig({
       minified: true,
     },
     usingComponents: true,
+    optimization: { subPackages: true },
   },
   'mp-alipay': {
     usingComponents: true,

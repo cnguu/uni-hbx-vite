@@ -1,6 +1,6 @@
 import fs from 'node:fs'
 import { fileURLToPath, URL } from 'node:url'
-import { PageContext } from '@uni-helper/vite-plugin-uni-pages'
+import { PageContext, type PageMetaDatum } from '@uni-helper/vite-plugin-uni-pages'
 import chalk from 'chalk'
 import consola from 'consola'
 import ora from 'ora'
@@ -98,30 +98,42 @@ export function beautifyJson(obj: any, indent = 2) {
 }
 
 export function scanPageFilter(ctx: PageContext, inKey: 'pages' | 'subPages') {
-  const keysToRemove = []
-  for (const key of ctx[inKey].keys()) {
-    if (!key.endsWith('-page.vue')) {
-      keysToRemove.push(key)
+  const pageFlag = '-page.vue'
+  if (inKey === 'pages') {
+    const keysToRemove: string[] = []
+    for (const key of ctx[inKey].keys()) {
+      if (!key.endsWith(pageFlag)) {
+        keysToRemove.push(key)
+      }
+    }
+    keysToRemove.forEach((key) => ctx[inKey].delete(key))
+  } else if (inKey === 'subPages') {
+    for (const subPageMap of ctx[inKey].values()) {
+      const keysToRemove: string[] = []
+      for (const key of subPageMap.keys()) {
+        if (!key.endsWith(pageFlag)) {
+          keysToRemove.push(key)
+        }
+      }
+      keysToRemove.forEach((key) => subPageMap.delete(key))
     }
   }
-  keysToRemove.forEach((key) => {
-    ctx[inKey].delete(key)
-  })
 }
 
 export function handlePageName(ctx: PageContext, inKey: 'pageMetaData' | 'subPageMetaData') {
+  const nameRegExp = /[/.-]/g
   if (inKey === 'subPageMetaData') {
     ctx[inKey].forEach((sub) => {
       sub.pages.forEach((page) => {
         if (page.name) return
-        page.name = page.path.replace(/[/.-]/g, '_').toUpperCase()
+        page.name = `${sub.root}/${page.path}`.replace(nameRegExp, '_').toUpperCase()
       })
     })
     return
   }
   ctx[inKey].forEach((page) => {
     if (page.name) return
-    page.name = page.path.replace(/[/.-]/g, '_').toUpperCase()
+    page.name = page.path.replace(nameRegExp, '_').toUpperCase()
   })
 }
 
@@ -130,10 +142,19 @@ export async function writePageConst(ctx: PageContext) {
     text: chalk.cyan('页面路径常量文件: 正在生成...'),
     spinner: 'dots',
   }).start()
-  const pageConstEntries = [
-    ...ctx.pageMetaData,
-    ...ctx.subPageMetaData.map((sub) => sub.pages).flat(),
-  ].map((page) => {
+  const pageConstEntries = (
+    [
+      ...ctx.pageMetaData,
+      ...ctx.subPageMetaData
+        .map((sub) =>
+          sub.pages.map((page) => ({
+            ...page,
+            path: `${sub.root}/${page.path}`,
+          })),
+        )
+        .flat(),
+    ] as PageMetaDatum[]
+  ).map((page) => {
     const comment = `/** ${page.style?.navigationBarTitleText || ''} */`
     return `${comment}\n${page.name} = '/${page.path}',\n`
   })

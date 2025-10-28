@@ -31,4 +31,6 @@ hybrid/
 .env.development
 auto-import.d.ts
 components.d.ts
+async-component.d.ts
+async-import.d.ts
 uni-pages.d.ts

@@ -12,4 +12,7 @@ export enum PageUrlConst {
 
   /** 登录 */
   PAGE_LOGIN_INDEX_PAGE = '/page/login/index-page',
+
+  /** 分包 */
+  PAGE_A_INDEX_PAGE = '/page-a/index-page',
 }
