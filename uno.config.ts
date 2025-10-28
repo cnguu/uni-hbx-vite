@@ -15,21 +15,29 @@ import {
   yellow,
 } from '@ant-design/colors'
 import { isMp } from '@uni-helper/uni-env'
-import { type Preset, type UserConfig } from '@unocss/core'
+import { type Preset, type UserConfig, type Variant } from '@unocss/core'
 import presetLegacyCompat from '@unocss/preset-legacy-compat'
 import { type Theme } from '@unocss/preset-uno'
-import presetWind3 from '@unocss/preset-wind3'
 import transformerDirectives from '@unocss/transformer-directives'
 import transformerVariantGroup from '@unocss/transformer-variant-group'
 import { presetApplet, presetRemRpx } from 'unocss-applet'
-import { THEME_COLOR, themeColorPalette } from './util/styleUtil'
+import {
+  ERROR_COLOR,
+  errorColorPalette,
+  SUCCESS_COLOR,
+  successColorPalette,
+  THEME_COLOR,
+  themeColorPalette,
+  WARN_COLOR,
+  warnColorPalette,
+} from './util/styleUtil'
 
 const presets: Preset[] = []
 if (isMp) {
   presets.push(presetApplet(), presetRemRpx())
 } else {
   presets.push(
-    presetWind3(),
+    presetApplet(),
     presetLegacyCompat({
       commaStyleColorFunction: true,
       legacyColorSpace: true,
@@ -52,13 +60,27 @@ const convertAntdColors = (colors: Record<string, string[]>) => {
   return converted
 }
 
-const convertThemeColors = () => {
+// 转换色板为 UnoCSS 所需要的对象结构
+const convertThemeColors = (key: string, palette: string[]) => {
   const converted: Record<string, string> = {}
-  themeColorPalette.forEach((color, index) => {
-    converted[`theme-${index + 1}`] = color
+  palette.forEach((color, index) => {
+    converted[`${key}-${index + 1}`] = color
   })
   return converted
 }
+
+// attribute 变体生成函数
+const createAttributeVariant = (attribute: string): Variant => ({
+  match: (s: string) => {
+    if (s.startsWith(`${attribute}:`)) {
+      const matcher = s.slice(attribute.length + 1)
+      return {
+        matcher,
+        selector: (input: string) => `${input}[${attribute}~="${matcher}"]`,
+      }
+    }
+  },
+})
 
 function defineConfig<T extends object = Theme>(config: UserConfig<T>): UserConfig<T> {
   return config
@@ -86,16 +108,21 @@ export default defineConfig({
       }),
 
       theme: THEME_COLOR,
-      ...convertThemeColors(),
+      ...convertThemeColors('theme', themeColorPalette),
+      success: SUCCESS_COLOR,
+      ...convertThemeColors('success', successColorPalette),
+      warn: WARN_COLOR,
+      ...convertThemeColors('warn', warnColorPalette),
+      error: ERROR_COLOR,
+      ...convertThemeColors('warn', errorColorPalette),
 
-      text: '#212b36',
-      secondary: '#637381',
-      aid: '#919eab',
-      tip: '#c4cdd5',
-      divider: '#f0f2f3',
-      bg: '#f9fafb',
-      'theme-bg': '#edf7ff',
-      'mask-bg': 'rgba(0, 0, 0, 0.5)',
+      text: '#000000e0',
+      secondary: '#000000a6',
+      tertiary: '#999999',
+      disabled: '#00000040',
+      border: '#d9d9d9',
+      divider: '#0505050f',
+      bg: '#f7f7f7',
     },
     fontWeight: {
       thin: 100,
@@ -113,31 +140,8 @@ export default defineConfig({
   transformers: [transformerDirectives(), transformerVariantGroup()],
   content: {
     pipeline: {
-      exclude: ['node_modules', 'dist', 'uni_modules'],
+      exclude: ['node_modules', 'dist', 'uni_modules', 'unpackage'],
     },
   },
-  variants: [
-    {
-      match: (s) => {
-        const attribute = 'custom-class'
-        if (s.startsWith(`${attribute}:`)) {
-          return {
-            matcher: s.slice(attribute.length + 1),
-            selector: (input) => `${input}[${attribute}~="${s.slice(attribute.length + 1)}"]`,
-          }
-        }
-      },
-    },
-    {
-      match: (s) => {
-        const attribute = 'placeholder-class'
-        if (s.startsWith(`${attribute}:`)) {
-          return {
-            matcher: s.slice(attribute.length + 1),
-            selector: (input) => `${input}[${attribute}~="${s.slice(attribute.length + 1)}"]`,
-          }
-        }
-      },
-    },
-  ],
+  variants: [createAttributeVariant('custom-class'), createAttributeVariant('placeholder-class')],
 })
