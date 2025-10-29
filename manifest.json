@@ -98,7 +98,7 @@
       "base": "/"
     },
     "unipush": {
-      "enable": true
+      "enable": false
     },
     "optimization": {
       "treeShaking": {

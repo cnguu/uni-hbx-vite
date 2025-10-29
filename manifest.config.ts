@@ -110,7 +110,7 @@ export default defineManifestConfig({
       base: VITE_BASE_PATH,
     },
     unipush: {
-      enable: true,
+      enable: false,
     },
     optimization: {
       treeShaking: {
