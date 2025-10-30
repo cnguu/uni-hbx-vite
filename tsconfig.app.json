@@ -1,7 +1,7 @@
 {
-  "extends": "@vue/tsconfig/tsconfig.dom.json",
-  "include": ["env.d.ts", "./**/*", "./**/*.vue"],
-  "exclude": ["**/__tests__/*"],
+    "extends": "@vue/tsconfig/tsconfig.dom.json",
+    "include": ["env.d.ts", "./**/*.ts", "./**/*.vue"],
+    "exclude": ["**/__tests__/*", "node_modules"],
     "compilerOptions": {
         "esModuleInterop": true,
         "allowSyntheticDefaultImports": true,
@@ -17,7 +17,8 @@
             "wot-design-uni/global.d.ts",
             "z-paging/types",
             "./type/**/*.d.ts"
-        ]
+        ],
+        "lib": ["ESNext", "DOM", "DOM.Iterable"]
     },
     "vueCompilerOptions": {
         "plugins": ["@uni-helper/uni-types/volar-plugin"]

@@ -18,10 +18,17 @@ $ pnpm i --frozen-lockfile
 
 ## 开发准备
 
-1. 复制开发环境配置 `env/.env.development.eg` => `.env.development`
+复制开发环境配置 `env/.env.development.eg` => `.env.development`
 
-2. 安卓调试基座 `unpackage/debug/android_debug.apk`
+> 类型见: type/vite-env.d.ts
 
-## APP 构建资源
+## 运行与构建
 
-- `unpackage/res`
+> 可直接在 HBX 中运行和构建
+
+### CLI
+
+1. 运行到 `WEB`: `$ pnpm dev`
+2. 运行到 `微信小程序`: `$ pnpm dev:mp-weixin`
+
+> 构建命令：将 `dev` 改为 `build`

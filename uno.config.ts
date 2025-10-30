@@ -15,35 +15,26 @@ import {
   yellow,
 } from '@ant-design/colors'
 import { isMp } from '@uni-helper/uni-env'
-import { type Preset, type UserConfig, type Variant } from '@unocss/core'
+import { presetUni } from '@uni-helper/unocss-preset-uni'
 import presetLegacyCompat from '@unocss/preset-legacy-compat'
-import { type Theme } from '@unocss/preset-uno'
-import transformerDirectives from '@unocss/transformer-directives'
-import transformerVariantGroup from '@unocss/transformer-variant-group'
-import { presetApplet, presetRemRpx } from 'unocss-applet'
+import { defineConfig, transformerDirectives, transformerVariantGroup, type Variant } from 'unocss'
 import {
+  BG_COLOR,
+  BORDER_COLOR,
+  DISABLED_COLOR,
+  DIVIDER_COLOR,
   ERROR_COLOR,
   errorColorPalette,
+  SECONDARY_COLOR,
   SUCCESS_COLOR,
   successColorPalette,
+  TERTIARY_COLOR,
+  TEXT_COLOR,
   THEME_COLOR,
   themeColorPalette,
   WARN_COLOR,
   warnColorPalette,
 } from './util/styleUtil'
-
-const presets: Preset[] = []
-if (isMp) {
-  presets.push(presetApplet(), presetRemRpx())
-} else {
-  presets.push(
-    presetApplet(),
-    presetLegacyCompat({
-      commaStyleColorFunction: true,
-      legacyColorSpace: true,
-    }),
-  )
-}
 
 // 转换 Ant Design 颜色数组为 UnoCSS 所需的对象结构
 const convertAntdColors = (colors: Record<string, string[]>) => {
@@ -82,9 +73,6 @@ const createAttributeVariant = (attribute: string): Variant => ({
   },
 })
 
-function defineConfig<T extends object = Theme>(config: UserConfig<T>): UserConfig<T> {
-  return config
-}
 export default defineConfig({
   shortcuts: [],
   rules: [],
@@ -116,13 +104,13 @@ export default defineConfig({
       error: ERROR_COLOR,
       ...convertThemeColors('warn', errorColorPalette),
 
-      text: '#000000e0',
-      secondary: '#000000a6',
-      tertiary: '#999999',
-      disabled: '#00000040',
-      border: '#d9d9d9',
-      divider: '#0505050f',
-      bg: '#f7f7f7',
+      text: TEXT_COLOR,
+      secondary: SECONDARY_COLOR,
+      tertiary: TERTIARY_COLOR,
+      disabled: DISABLED_COLOR,
+      border: BORDER_COLOR,
+      divider: DIVIDER_COLOR,
+      bg: BG_COLOR,
     },
     fontWeight: {
       thin: 100,
@@ -136,7 +124,17 @@ export default defineConfig({
       black: 950,
     },
   },
-  presets: [...presets],
+  presets: [
+    presetUni({
+      uno: true,
+      remRpx: isMp,
+      attributify: false,
+    }),
+    presetLegacyCompat({
+      commaStyleColorFunction: true,
+      legacyColorSpace: true,
+    }),
+  ],
   transformers: [transformerDirectives(), transformerVariantGroup()],
   content: {
     pipeline: {

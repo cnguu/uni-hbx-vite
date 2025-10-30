@@ -11,10 +11,10 @@
         "manifest.config.*",
         "pages.config.*"
     ],
+    "exclude": ["./component/**/*", "./page/**/*"],
     "compilerOptions": {
         "noEmit": true,
         "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
-
         "module": "ESNext",
         "moduleResolution": "Bundler",
         "types": ["node"]

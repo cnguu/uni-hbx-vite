@@ -6,4 +6,4 @@ export const TimezoneEnum = enumUtil({
     value: 'Asia/Shanghai',
     label: '上海',
   },
-} as const)
+})

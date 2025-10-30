@@ -1,3 +1,4 @@
+import { type Config } from '@eslint/config-helpers'
 import unoCss from '@unocss/eslint-config/flat'
 import skipFormatting from '@vue/eslint-config-prettier/skip-formatting'
 import { defineConfigWithVueTs, vueTsConfigs } from '@vue/eslint-config-typescript'
@@ -20,7 +21,7 @@ export default defineConfigWithVueTs(
     'async-import.d.ts',
     'eslintrc-auto-import.json',
   ]),
-  unoCss,
+  unoCss as unknown as Config,
   {
     languageOptions: {
       ecmaVersion: 'latest',
@@ -28,7 +29,19 @@ export default defineConfigWithVueTs(
         ...globals.browser,
         ...globals.es2021,
         ...globals.node,
-        uniCloud: 'readonly',
+        dd: 'readonly', // https://open.dingtalk.com/
+        jd: 'readonly', // https://mp.jd.com/
+        ks: 'readonly', // https://mp.kuaishou.com/
+        my: 'readonly', // https://opendocs.alipay.com/mini
+        plus: 'readonly', // http://www.html5plus.org/doc/h5p.html
+        qh: 'readonly', // https://mp.360.cn/
+        qq: 'readonly', // https://q.qq.com/
+        swan: 'readonly', // https://smartprogram.baidu.com/docs
+        tt: 'readonly', // https://developer.open-douyin.com/ https://open.feishu.cn/
+        uni: 'readonly', // https://uniapp.dcloud.io/
+        uniCloud: 'readonly', // https://uniapp.dcloud.io
+        weex: 'readonly', // https://weex.apache.org/
+        wx: 'readonly', // https://developers.weixin.qq.com/miniprogram/dev/framework/
       },
       parserOptions: {
         ecmaFeatures: {

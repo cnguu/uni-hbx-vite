@@ -1,13 +1,15 @@
 @font-face {
   font-family: 'uhv'; /* Project id 0 */
-  src: url('@/style/font/uhv.woff2?t=1745284796872') format('woff2');
+  src:
+    url('@/style/font/uhv.woff?t=1761704144407') format('woff'),
+    url('@/style/font/uhv.ttf?t=1761704144407') format('truetype');
 }
 
 .uhv {
   font-family: 'uhv' !important;
   font-size: 32rpx;
   font-style: normal;
-  line-height: inherit;
+  line-height: 32rpx;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

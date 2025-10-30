@@ -66,9 +66,68 @@
     "appid": "wx18ea457b6b4c51d3",
     "setting": {
       "urlCheck": false,
-      "minified": true
+      "condition": false,
+      "es6": false,
+      "enhance": false,
+      "es7": false,
+      "postcss": true,
+      "minified": true,
+      "minifyWXSS": true,
+      "minifyWXML": true,
+      "swc": false,
+      "uglifyFileName": false,
+      "ignoreUploadUnusedFiles": true,
+      "autoAudits": false,
+      "compileHotReLoad": false,
+      "preloadBackgroundData": false,
+      "lazyloadPlaceholderEnable": false,
+      "useStaticServer": false,
+      "bigPackageSizeSupport": true,
+      "skylineRenderEnable": false,
+      "babelSetting": {
+        "outputPath": "@babel/runtime",
+        "ignore": []
+      },
+      "useCompilerPlugins": false,
+      "disableUseStrict": false,
+      "uploadWithSourceMap": false,
+      "localPlugins": false,
+      "packNpmManually": false,
+      "coverView": true,
+      "ignoreDevUnusedFiles": true,
+      "checkInvalidKey": false,
+      "showShadowRootInWxmlPanel": true,
+      "useIsolateContext": true,
+      "useMultiFrameRuntime": true,
+      "useApiHook": false,
+      "useApiHostProcess": false,
+      "useLanDebug": false,
+      "enableEngineNative": false,
+      "showES6CompileOption": true,
+      "checkSiteMap": false
     },
     "usingComponents": true,
+    "libVersion": "3.8.12",
+    "plugins": {
+      "sendCoupon": {
+        "version": "latest",
+        "provider": "wxf3f436ba9bd4be7b"
+      }
+    },
+    "requiredPrivateInfos": [
+      "getLocation",
+      "chooseLocation",
+      "onLocationChange",
+      "startLocationUpdateBackground"
+    ],
+    "requiredBackgroundModes": [
+      "location"
+    ],
+    "permission": {
+      "scope.userLocation": {
+        "desc": "请允许使用定位，以便于您进行地理位置相关活动"
+      }
+    },
     "optimization": {
       "subPackages": true
     }

@@ -15,3 +15,8 @@ onHide(() => {
   console.log(`【APP】onHide`)
 })
 </script>
+
+<style lang="scss">
+@import '@/style/global.scss';
+@import '@/style/font/uhv.scss';
+</style>

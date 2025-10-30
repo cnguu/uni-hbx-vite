@@ -6,7 +6,7 @@ import { showToast } from '@/util/messageUtil.ts'
 import { navigateBack, reLaunch, type RouteUrlEnum } from '@/util/routeUtil.ts'
 import { parseUrl } from '@/util/stringUtil.ts'
 
-const interceptorOptions: UniApp.InterceptorOptions = {
+export const interceptorOptions: UniApp.InterceptorOptions = {
   invoke({ url }) {
     const originalUrl = url as RouteUrlEnum & '/'
     console.log(`【APP】interceptor route original：${originalUrl}`)

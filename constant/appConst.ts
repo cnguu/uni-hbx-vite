@@ -8,6 +8,6 @@ export const APP_BASE_INFO = {
 }
 
 /**
- * 应用创立日期
+ * 应用最早数据日期
  */
 export const APP_CREATE_DATE = '2025-10-01'
