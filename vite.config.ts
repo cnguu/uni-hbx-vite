@@ -20,8 +20,8 @@ import {
   writePageConst,
 } from './builder/util'
 
-export default ({ command, mode }: ConfigEnv) => {
-  const isBuild = command === 'build'
+export default ({ mode }: ConfigEnv) => {
+  const isProd = mode === 'production'
   const envDir = fileURLToPath(new URL('./env/', import.meta.url))
   const env = loadEnv(mode, envDir) as unknown as Env.ImportMeta
   const { VITE_APP_TITLE, VITE_SERVER_PORT, VITE_SERVER_PROXY } = env
@@ -117,7 +117,7 @@ export default ({ command, mode }: ConfigEnv) => {
       UniManifest(),
       UnoCSS(),
       Uni(),
-      isBuild && isWeb && compression(),
+      isProd && isWeb && compression(),
     ],
     resolve: {
       alias: [
@@ -147,8 +147,8 @@ export default ({ command, mode }: ConfigEnv) => {
       minify: 'terser',
       terserOptions: {
         compress: {
-          drop_console: isBuild,
-          drop_debugger: isBuild,
+          drop_console: isProd,
+          drop_debugger: isProd,
         },
       },
     },
