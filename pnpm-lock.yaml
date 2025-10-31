@@ -219,6 +219,9 @@ importers:
       typescript:
         specifier: 5.9.3
         version: 5.9.3
+      univar:
+        specifier: 0.2.1
+        version: 0.2.1
       unocss:
         specifier: 65.4.3
         version: 65.4.3(postcss@8.5.6)(rollup@4.52.5)(vite@5.4.20(@types/node@22.18.12)(sass@1.78.0)(terser@5.44.0))(vue@3.4.21(typescript@5.9.3))
@@ -5040,6 +5043,11 @@ packages:
   unimport@5.5.0:
     resolution: {integrity: sha512-/JpWMG9s1nBSlXJAQ8EREFTFy3oy6USFd8T6AoBaw1q2GGcF4R9yp3ofg32UODZlYEO5VD0EWE1RpI9XDWyPYg==}
     engines: {node: '>=18.12.0'}
+
+  univar@0.2.1:
+    resolution: {integrity: sha512-ICBQ4ogJI2Z5M0oGFe9wzfueQYerxxWB2+bifWSeCf6cr3/lhpZB9YmQjmBYi1nMLVKu/AfaJJPAGS4vfWKZNg==}
+    engines: {node: '>=14'}
+    hasBin: true
 
   universalify@0.2.0:
     resolution: {integrity: sha512-CJ1QgKmNg3CwvAv/kOFmtnEN05f0D/cn9QntgNOQlQF9dgvVTHj3t+8JPdjqawCHk7V/KA+fbUqzZ9XWhcqPUg==}
@@ -11442,6 +11450,8 @@ snapshots:
       tinyglobby: 0.2.15
       unplugin: 2.3.10
       unplugin-utils: 0.3.1
+
+  univar@0.2.1: {}
 
   universalify@0.2.0: {}
 
