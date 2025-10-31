@@ -75,7 +75,18 @@ const createAttributeVariant = (attribute: string): Variant => ({
 
 export default defineConfig({
   shortcuts: [],
-  rules: [],
+  rules: [
+    [
+      /^safe-area-inset-(top|right|bottom|left)$/,
+      ([, d]) => {
+        return [
+          [`padding-${d}`, 0],
+          [`padding-${d}`, `constant(safe-area-inset-${d})`],
+          [`padding-${d}`, `env(safe-area-inset-${d})`],
+        ]
+      },
+    ],
+  ],
   theme: {
     colors: {
       ...convertAntdColors({
