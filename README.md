@@ -1,6 +1,6 @@
 # UNI HBX VITE
 
-UniApp 新项目基础模板，HBuilderX 为主，Cli 为辅
+UniApp 项目快速启动，同时支持 HBX 运行和 CLI 运行
 
 ## 克隆项目
 
