@@ -3,6 +3,8 @@ import { defineUniPages } from '@uni-helper/vite-plugin-uni-pages'
 export default defineUniPages({
   globalStyle: {
     navigationStyle: 'custom',
+    navigationBarTextStyle: 'black',
+    enablePullDownRefresh: false,
     'app-plus': {
       bounce: 'none',
     },
