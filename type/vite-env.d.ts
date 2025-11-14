@@ -21,15 +21,12 @@ declare namespace Env {
     readonly VITE_PACKAGE_A: string
     /** 路由基础路径 */
     readonly VITE_BASE_PATH: string
-
     /** 微信小程序 APPID */
     readonly VITE_MP_WECHAT_APPID: string
-
     /** 请求接口地址 */
     readonly VITE_API: string
     /** 请求接口地址公共前缀 */
     readonly VITE_API_PREFIX: string
-
     /** 开发服务器端口 */
     readonly VITE_SERVER_PORT: string
     /** 开发服务器请求代理 */
