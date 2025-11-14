@@ -25,6 +25,7 @@ import {
   DIVIDER_COLOR,
   ERROR_COLOR,
   errorColorPalette,
+  MASK_COLOR,
   SECONDARY_COLOR,
   SUCCESS_COLOR,
   successColorPalette,
@@ -122,6 +123,7 @@ export default defineConfig({
       border: BORDER_COLOR,
       divider: DIVIDER_COLOR,
       bg: BG_COLOR,
+      mask: MASK_COLOR,
     },
     fontWeight: {
       thin: 100,
