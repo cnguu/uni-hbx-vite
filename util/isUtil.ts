@@ -1,7 +1,6 @@
 /***********
  * 是否相关 *
  **********/
-import { RegExpEnum } from '@/enum/regExpEnum.ts'
 
 // 获取对象的字符串表示
 export const objectToString = Object.prototype.toString
@@ -116,24 +115,6 @@ export const isFormData = (val: unknown): val is FormData => is(val, 'FormData')
 
 // 判断是否为 File 类型
 export const isFile = (val: unknown): val is File => is(val, 'File')
-
-// 判断是否为 HTTPS 链接
-export const isHttps = (val: unknown): boolean => {
-  if (!isString(val)) return false
-  return val.startsWith('https')
-}
-
-// 判断是否为 URL
-export const isUrl = (val: unknown): boolean => {
-  if (!isString(val)) return false
-  return RegExpEnum.URL.test(val)
-}
-
-// 判断是否为手机号码
-export const isCellPhoneNumber = (val: unknown): boolean => {
-  if (!isString(val)) return false
-  return RegExpEnum.CELL_PHONE_NUMBER.test(val)
-}
 
 // 判断是否为 A 包
 export const isPackageA = import.meta.env.VITE_PACKAGE_A === 'true'

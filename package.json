@@ -1,6 +1,6 @@
 {
     "name": "uni-hbx-vite",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "private": true,
     "type": "module",
     "scripts": {
@@ -83,7 +83,6 @@
         "@dcloudio/vite-plugin-uni": "3.0.0-4080520251106001",
         "@ianvs/prettier-plugin-sort-imports": "4.6.3",
         "@tsconfig/node22": "22.0.3",
-        "@types/lodash": "4.17.20",
         "@uni-helper/plugin-uni": "0.1.0",
         "@uni-helper/uni-env": "0.2.0",
         "@uni-helper/uni-types": "1.0.0-alpha.6",
