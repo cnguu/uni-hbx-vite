@@ -1,6 +1,7 @@
 /**************
  * 信息相关操作 *
  **************/
+import { DISABLED_COLOR, THEME_COLOR } from '@/util/styleUtil.ts'
 
 // uni.showToast 封装
 export const showToast = (title: string, options: UniApp.ShowToastOptions = {}) => {
@@ -18,6 +19,8 @@ export const showToast = (title: string, options: UniApp.ShowToastOptions = {}) 
 export const showModal = (title: string, options: UniApp.ShowModalOptions = {}) => {
   const showToastOptions = {
     title,
+    cancelColor: DISABLED_COLOR,
+    confirmColor: THEME_COLOR,
     ...options,
   }
   return uni.showModal(showToastOptions)
