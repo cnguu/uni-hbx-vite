@@ -11,7 +11,7 @@
         "manifest.config.*",
         "pages.config.*"
     ],
-    "exclude": ["./component/**/*", "./page/**/*"],
+    "exclude": ["./component/**/*", "./page/**/*", "./page-a/**/*"],
     "compilerOptions": {
         "noEmit": true,
         "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
