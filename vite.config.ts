@@ -58,6 +58,7 @@ export default ({ mode }: ConfigEnv) => {
           'pinia',
           {
             '@/constant/pageConst.ts': ['PageUrlConst'],
+            '@/util/sharedUtil.ts': ['getCurrentPage', 'sleep'],
             '@/util/storageUtil.ts': ['uniStorage'],
           },
         ],
