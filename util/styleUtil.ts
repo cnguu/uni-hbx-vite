@@ -35,3 +35,5 @@ export const BORDER_COLOR = '#d9d9d9'
 export const DIVIDER_COLOR = '#0505050f'
 // 布局背景色
 export const BG_COLOR = '#f7f7f7'
+// 遮罩背景色
+export const MASK_COLOR = '#00000080'
