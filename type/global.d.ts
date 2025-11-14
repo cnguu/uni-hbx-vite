@@ -4,16 +4,15 @@ declare global {
   /**
    * Void function
    */
-  type Fn = () => void
+  type Fn<T = void> = () => T
 
   /**
    * Any function
    */
   type AnyFn = (...args: any[]) => any
-}
 
-declare module 'mp-html/dist/uni-app/components/mp-html/mp-html.vue' {
-  import { defineComponent } from 'vue'
-  const component: ReturnType<typeof defineComponent>
-  export default component
+  /**
+   * Generic function
+   */
+  type GenericFn<Args extends any[] = [], R = void> = (...args: Args) => R
 }
