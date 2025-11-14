@@ -31,8 +31,7 @@
       "path": "page/launch/index-page",
       "type": "home",
       "style": {
-        "navigationBarTitleText": "启动",
-        "navigationStyle": "custom"
+        "navigationBarTitleText": "启动"
       },
       "name": "PAGE_LAUNCH_INDEX_PAGE"
     },
@@ -40,8 +39,7 @@
       "path": "page/home/index-page",
       "type": "page",
       "style": {
-        "navigationBarTitleText": "首页",
-        "navigationStyle": "custom"
+        "navigationBarTitleText": "首页"
       },
       "name": "PAGE_HOME_INDEX_PAGE"
     },
@@ -49,8 +47,7 @@
       "path": "page/login/index-page",
       "type": "page",
       "style": {
-        "navigationBarTitleText": "登录",
-        "navigationStyle": "custom"
+        "navigationBarTitleText": "登录"
       },
       "name": "PAGE_LOGIN_INDEX_PAGE"
     }
@@ -63,8 +60,7 @@
           "path": "index-page",
           "type": "page",
           "style": {
-            "navigationBarTitleText": "分包",
-            "navigationStyle": "custom"
+            "navigationBarTitleText": "分包"
           },
           "name": "PAGE_A_INDEX_PAGE"
         }
