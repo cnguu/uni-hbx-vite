@@ -13,6 +13,7 @@ type FormattedNumberOptions = Omit<
 > & {
   minimumFractionDigits: number
   maximumFractionDigits: number
+  useGrouping?: boolean
 }
 
 /**
