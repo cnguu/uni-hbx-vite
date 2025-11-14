@@ -65,12 +65,7 @@
         "@dcloudio/uni-mp-weixin": "3.0.0-4080520251106001",
         "@dcloudio/uni-mp-xhs": "3.0.0-4080520251106001",
         "@dcloudio/uni-quickapp-webview": "3.0.0-4080520251106001",
-        "dayjs": "1.11.19",
         "enum-plus": "3.1.2",
-        "lodash": "4.17.21",
-        "mime": "4.1.0",
-        "mp-html": "2.5.1",
-        "number-precision": "1.6.0",
         "pinia": "3.0.4",
         "vue": "3.4.21",
         "vue-router": "4.5.1"

@@ -2,7 +2,6 @@
 definePage({
   style: {
     navigationBarTitleText: '分包',
-    navigationStyle: 'custom',
   },
 })
 </script>

@@ -2,7 +2,6 @@
 definePage({
   style: {
     navigationBarTitleText: '登录',
-    navigationStyle: 'custom',
   },
 })
 

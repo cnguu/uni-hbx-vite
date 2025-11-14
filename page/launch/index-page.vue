@@ -6,7 +6,6 @@ definePage({
   type: 'home',
   style: {
     navigationBarTitleText: '启动',
-    navigationStyle: 'custom',
   },
 })
 
