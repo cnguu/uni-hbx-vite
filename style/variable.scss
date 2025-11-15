@@ -5,64 +5,111 @@
 $uhv-namespace: 'uhv';
 
 // 主题色
-$-uhv-color-theme-1: var(--uhv-color-theme-1, #e6f7ff) !default;
-$-uhv-color-theme-2: var(--uhv-color-theme-2, #bae7ff) !default;
-$-uhv-color-theme-3: var(--uhv-color-theme-3, #91d5ff) !default;
-$-uhv-color-theme-4: var(--uhv-color-theme-4, #69c0ff) !default;
-$-uhv-color-theme-5: var(--uhv-color-theme-5, #40a9ff) !default;
-$-uhv-color-theme-6: var(--uhv-color-theme-6, #1890ff) !default;
-$-uhv-color-theme-7: var(--uhv-color-theme-7, #096dd9) !default;
-$-uhv-color-theme-8: var(--uhv-color-theme-8, #0050b3) !default;
-$-uhv-color-theme-9: var(--uhv-color-theme-9, #003a8c) !default;
-$-uhv-color-theme-10: var(--uhv-color-theme-10, #002766) !default;
+$-uhv-color-static-theme-1: #e6f7ff !default;
+$-uhv-color-static-theme-2: #bae7ff !default;
+$-uhv-color-static-theme-3: #91d5ff !default;
+$-uhv-color-static-theme-4: #69c0ff !default;
+$-uhv-color-static-theme-5: #40a9ff !default;
+$-uhv-color-static-theme-6: #1890ff !default;
+$-uhv-color-static-theme-7: #096dd9 !default;
+$-uhv-color-static-theme-8: #0050b3 !default;
+$-uhv-color-static-theme-9: #003a8c !default;
+$-uhv-color-static-theme-10: #002766 !default;
+$-uhv-color-theme-1: var(--uhv-color-theme-1, $-uhv-color-static-theme-1) !default;
+$-uhv-color-theme-2: var(--uhv-color-theme-2, $-uhv-color-static-theme-2) !default;
+$-uhv-color-theme-3: var(--uhv-color-theme-3, $-uhv-color-static-theme-3) !default;
+$-uhv-color-theme-4: var(--uhv-color-theme-4, $-uhv-color-static-theme-4) !default;
+$-uhv-color-theme-5: var(--uhv-color-theme-5, $-uhv-color-static-theme-5) !default;
+$-uhv-color-theme-6: var(--uhv-color-theme-6, $-uhv-color-static-theme-6) !default;
+$-uhv-color-theme-7: var(--uhv-color-theme-7, $-uhv-color-static-theme-7) !default;
+$-uhv-color-theme-8: var(--uhv-color-theme-8, $-uhv-color-static-theme-8) !default;
+$-uhv-color-theme-9: var(--uhv-color-theme-9, $-uhv-color-static-theme-9) !default;
+$-uhv-color-theme-10: var(--uhv-color-theme-10, $-uhv-color-static-theme-10) !default;
 
 // 成功色
-$-uhv-color-success-1: var(--uhv-color-success-1, #f6ffed) !default;
-$-uhv-color-success-2: var(--uhv-color-success-2, #d9f7be) !default;
-$-uhv-color-success-3: var(--uhv-color-success-3, #b7eb8f) !default;
-$-uhv-color-success-4: var(--uhv-color-success-4, #95de64) !default;
-$-uhv-color-success-5: var(--uhv-color-success-5, #73d13d) !default;
-$-uhv-color-success-6: var(--uhv-color-success-6, #52c41a) !default;
-$-uhv-color-success-7: var(--uhv-color-success-7, #389e0d) !default;
-$-uhv-color-success-8: var(--uhv-color-success-8, #237804) !default;
-$-uhv-color-success-9: var(--uhv-color-success-9, #135200) !default;
-$-uhv-color-success-10: var(--uhv-color-success-10, #092b00) !default;
+$-uhv-color-static-success-1: #f6ffed !default;
+$-uhv-color-static-success-2: #d9f7be !default;
+$-uhv-color-static-success-3: #b7eb8f !default;
+$-uhv-color-static-success-4: #95de64 !default;
+$-uhv-color-static-success-5: #73d13d !default;
+$-uhv-color-static-success-6: #52c41a !default;
+$-uhv-color-static-success-7: #389e0d !default;
+$-uhv-color-static-success-8: #237804 !default;
+$-uhv-color-static-success-9: #135200 !default;
+$-uhv-color-static-success-10: #092b00 !default;
+$-uhv-color-success-1: var(--uhv-color-success-1, $-uhv-color-static-success-1) !default;
+$-uhv-color-success-2: var(--uhv-color-success-2, $-uhv-color-static-success-2) !default;
+$-uhv-color-success-3: var(--uhv-color-success-3, $-uhv-color-static-success-3) !default;
+$-uhv-color-success-4: var(--uhv-color-success-4, $-uhv-color-static-success-4) !default;
+$-uhv-color-success-5: var(--uhv-color-success-5, $-uhv-color-static-success-5) !default;
+$-uhv-color-success-6: var(--uhv-color-success-6, $-uhv-color-static-success-6) !default;
+$-uhv-color-success-7: var(--uhv-color-success-7, $-uhv-color-static-success-7) !default;
+$-uhv-color-success-8: var(--uhv-color-success-8, $-uhv-color-static-success-8) !default;
+$-uhv-color-success-9: var(--uhv-color-success-9, $-uhv-color-static-success-9) !default;
+$-uhv-color-success-10: var(--uhv-color-success-10, $-uhv-color-static-success-10) !default;
 
 // 警告色
-$-uhv-color-warn-1: var(--uhv-color-warn-1, #fffbe6) !default;
-$-uhv-color-warn-2: var(--uhv-color-warn-2, #fff1b8) !default;
-$-uhv-color-warn-3: var(--uhv-color-warn-3, #ffe58f) !default;
-$-uhv-color-warn-4: var(--uhv-color-warn-4, #ffd666) !default;
-$-uhv-color-warn-5: var(--uhv-color-warn-5, #ffc53d) !default;
-$-uhv-color-warn-6: var(--uhv-color-warn-6, #faad14) !default;
-$-uhv-color-warn-7: var(--uhv-color-warn-7, #d48806) !default;
-$-uhv-color-warn-8: var(--uhv-color-warn-8, #ad6800) !default;
-$-uhv-color-warn-9: var(--uhv-color-warn-9, #874d00) !default;
-$-uhv-color-warn-10: var(--uhv-color-warn-10, #613400) !default;
+$-uhv-color-static-warn-1: #fffbe6 !default;
+$-uhv-color-static-warn-2: #fff1b8 !default;
+$-uhv-color-static-warn-3: #ffe58f !default;
+$-uhv-color-static-warn-4: #ffd666 !default;
+$-uhv-color-static-warn-5: #ffc53d !default;
+$-uhv-color-static-warn-6: #faad14 !default;
+$-uhv-color-static-warn-7: #d48806 !default;
+$-uhv-color-static-warn-8: #ad6800 !default;
+$-uhv-color-static-warn-9: #874d00 !default;
+$-uhv-color-static-warn-10: #613400 !default;
+$-uhv-color-warn-1: var(--uhv-color-warn-1, $-uhv-color-static-warn-1) !default;
+$-uhv-color-warn-2: var(--uhv-color-warn-2, $-uhv-color-static-warn-2) !default;
+$-uhv-color-warn-3: var(--uhv-color-warn-3, $-uhv-color-static-warn-3) !default;
+$-uhv-color-warn-4: var(--uhv-color-warn-4, $-uhv-color-static-warn-4) !default;
+$-uhv-color-warn-5: var(--uhv-color-warn-5, $-uhv-color-static-warn-5) !default;
+$-uhv-color-warn-6: var(--uhv-color-warn-6, $-uhv-color-static-warn-6) !default;
+$-uhv-color-warn-7: var(--uhv-color-warn-7, $-uhv-color-static-warn-7) !default;
+$-uhv-color-warn-8: var(--uhv-color-warn-8, $-uhv-color-static-warn-8) !default;
+$-uhv-color-warn-9: var(--uhv-color-warn-9, $-uhv-color-static-warn-9) !default;
+$-uhv-color-warn-10: var(--uhv-color-warn-10, $-uhv-color-static-warn-10) !default;
 
 // 错误色
-$-uhv-color-error-1: var(--uhv-color-error-1, #fff2f0) !default;
-$-uhv-color-error-2: var(--uhv-color-error-2, #fff1f0) !default;
-$-uhv-color-error-3: var(--uhv-color-error-3, #ffccc7) !default;
-$-uhv-color-error-4: var(--uhv-color-error-4, #ffa39e) !default;
-$-uhv-color-error-5: var(--uhv-color-error-5, #ff7875) !default;
-$-uhv-color-error-6: var(--uhv-color-error-6, #ff4d4f) !default;
-$-uhv-color-error-7: var(--uhv-color-error-7, #d9363e) !default;
-$-uhv-color-error-8: var(--uhv-color-error-8, #b32430) !default;
-$-uhv-color-error-9: var(--uhv-color-error-9, #8c1523) !default;
-$-uhv-color-error-10: var(--uhv-color-error-10, #660e1b) !default;
+$-uhv-color-static-error-1: #fff2f0 !default;
+$-uhv-color-static-error-2: #fff1f0 !default;
+$-uhv-color-static-error-3: #ffccc7 !default;
+$-uhv-color-static-error-4: #ffa39e !default;
+$-uhv-color-static-error-5: #ff7875 !default;
+$-uhv-color-static-error-6: #ff4d4f !default;
+$-uhv-color-static-error-7: #d9363e !default;
+$-uhv-color-static-error-8: #b32430 !default;
+$-uhv-color-static-error-9: #8c1523 !default;
+$-uhv-color-static-error-10: #660e1b !default;
+$-uhv-color-error-1: var(--uhv-color-error-1, $-uhv-color-static-error-1) !default;
+$-uhv-color-error-2: var(--uhv-color-error-2, $-uhv-color-static-error-2) !default;
+$-uhv-color-error-3: var(--uhv-color-error-3, $-uhv-color-static-error-3) !default;
+$-uhv-color-error-4: var(--uhv-color-error-4, $-uhv-color-static-error-4) !default;
+$-uhv-color-error-5: var(--uhv-color-error-5, $-uhv-color-static-error-5) !default;
+$-uhv-color-error-6: var(--uhv-color-error-6, $-uhv-color-static-error-6) !default;
+$-uhv-color-error-7: var(--uhv-color-error-7, $-uhv-color-static-error-7) !default;
+$-uhv-color-error-8: var(--uhv-color-error-8, $-uhv-color-static-error-8) !default;
+$-uhv-color-error-9: var(--uhv-color-error-9, $-uhv-color-static-error-9) !default;
+$-uhv-color-error-10: var(--uhv-color-error-10, $-uhv-color-static-error-10) !default;
 
 // 标准文本色/一级文本色
-$-uhv-color-text: var(--uhv-color-text, #000000e0) !default;
+$-uhv-color-static-text: #000000e0 !default;
 // 二级文本色
-$-uhv-color-secondary: var(--uhv-color-secondary, #000000a6) !default;
+$-uhv-color-static-secondary: #000000a6 !default;
 // 三级文本色
-$-uhv-color-tertiary: var(--uhv-color-tertiary, #999999) !default;
+$-uhv-color-static-tertiary: #999999 !default;
 // 禁用文本色
-$-uhv-color-disabled: var(--uhv-color-disabled, #00000040) !default;
+$-uhv-color-static-disabled: #00000040 !default;
 // 边框色
-$-uhv-color-border: var(--uhv-color-border, #d9d9d9) !default;
+$-uhv-color-static-border: #d9d9d9 !default;
 // 分割线色
-$-uhv-color-divider: var(--uhv-color-divider, #0505050f) !default;
+$-uhv-color-static-divider: #0505050f !default;
 // 布局背景色
-$-uhv-color-bg: var(--uhv-color-bg, #f7f7f7) !default;
+$-uhv-color-static-bg: #f7f7f7 !default;
+$-uhv-color-text: var(--uhv-color-text, $-uhv-color-static-text) !default;
+$-uhv-color-secondary: var(--uhv-color-secondary, $-uhv-color-static-secondary) !default;
+$-uhv-color-tertiary: var(--uhv-color-tertiary, $-uhv-color-static-tertiary) !default;
+$-uhv-color-disabled: var(--uhv-color-disabled, $-uhv-color-static-disabled) !default;
+$-uhv-color-border: var(--uhv-color-border, $-uhv-color-static-border) !default;
+$-uhv-color-divider: var(--uhv-color-divider, $-uhv-color-static-divider) !default;
+$-uhv-color-bg: var(--uhv-color-bg, $-uhv-color-static-bg) !default;
