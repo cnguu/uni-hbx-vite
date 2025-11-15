@@ -1,16 +1,20 @@
 html {
+  //警示布局是否超出 rpx 默认范围，自行按实际处理
   background-color: #000000;
 }
 
 #app {
+  //超出 rpx 默认范围时内容居中，自行按实际处理
   margin: 0 auto;
   max-width: 960px;
   background-color: $-uhv-color-bg;
+  //小技巧，创建独立堆叠上下文，改变 fixed 定位等等，自行按实际处理
   transform: translateZ(0);
   overflow: hidden;
 }
 
 page {
+  //让元素撑满屏幕，方便后面布局
   height: 100%;
   color: $-uhv-color-text;
   font-size: 28rpx;

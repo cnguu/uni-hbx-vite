@@ -18,7 +18,7 @@ $ pnpm i --frozen-lockfile
 
 ## 开发准备
 
-复制开发环境配置 `env/.env.development.eg` => `.env.development`
+复制开发环境配置 `env/.env.development.eg` => `env/.env.development`
 
 > 类型见: type/vite-env.d.ts
 
@@ -30,5 +30,52 @@ $ pnpm i --frozen-lockfile
 
 1. 运行到 `WEB`: `$ pnpm dev`
 2. 运行到 `微信小程序`: `$ pnpm dev:mp-weixin`
+3. 更多命令见 `package.json` 中的 `script`
 
 > 构建命令：将 `dev` 改为 `build`
+
+### 目录说明
+
+```
+---
+  |- builder/      构建相关
+  |- constant/     常量相关
+  |- enum/         枚举相关
+  |- env/          环境变量相关
+  |- hook/         钩子相关
+  |- interceptor/  拦截相关
+  |- layout/       布局相关
+  |- page/         主包
+  |- page-a/       分包
+  |- static/       静态资源
+  |- store/        数据仓储
+  |- style/        样式相关
+  |- type/         类型相关
+  |- util/         工具
+```
+
+### 依赖说明
+
+- `eslint` + `prettier` + `husky` + `lint-staged`: 团队合作必备
+- `typescript`: 用代码的方式来写注释
+- `unocss`: 快速编写简单样式（class 起名困难症者的福音）
+- `@ant-design/colors`: 大量实践经验下的调色板
+- `enum-plus`: 增强的枚举对象
+- `@uni-helper/plugin-uni`: 让项目支持一些 `ONLY ESM` 依赖
+- `@uni-helper/uni-env`: 使 `process.env.UNI_PLATFORM` 环境判断更加易用
+- `@uni-helper/vite-plugin-uni-components`: 组件的自动导入
+- `@uni-helper/vite-plugin-uni-manifest`: 管理并自动生成 `manifest.json`
+- `@uni-helper/vite-plugin-uni-pages`: 管理并自动生成 `pages.json`
+- `@uni-ku/bundle-optimizer`: 分包优化
+- `@uni-ku/root`: 根组件
+- `unplugin-auto-import`: 依赖自动导入
+- 等等...
+
+### 其他
+
+- `util/isUtil.ts`: 常见基础类型判断
+- `util/messageUtil.ts`: 封装 `uni` 的反馈相关，增强使用体验
+- `util/routeUtil.ts`: 封装 `uni` 的跳转相关，增强使用体验
+- `util/storageUtil.ts`: 封装 `uni` 的 `Storage`，提供类型安全的存储操作（避免自己忘记缓存中有什么）
+- `util/styleUtil.ts` + `style/variable.scss`: 自己的调色板
+- 等等...
