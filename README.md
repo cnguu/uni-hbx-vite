@@ -1,6 +1,23 @@
 # UNI HBX VITE
 
+[![release](https://badgen.net/github/release/cnguu/uni-hbx-vite)](https://github.com/cnguu/uni-hbx-vite/releases)
+[![license](https://badgen.net/github/license/cnguu/uni-hbx-vite)](https://github.com/cnguu/uni-hbx-vite/blob/main/LICENSE)
+
 UniApp 项目快速启动，同时支持 HBX 运行和 CLI 运行
+
+## 特性
+
+- :sparkling_heart: 零配置，开箱即用，尽可能的纯净模板
+- :sparkling_heart: 最新技术栈 [Vue3](https://github.com/vuejs/core), [Vite](https://github.com/vitejs/vite), [PNPM](https://pnpm.io), [UnoCSS](https://github.com/unocss/unocss), [TypeScript](https://www.typescriptlang.org), [Pinia](https://github.com/vuejs/pinia) ...
+- :sparkling_heart: 目录即路由，自动生成 `pages.json`
+- :sparkling_heart: 自动导入组件和依赖
+- ...
+
+## 平台兼容性
+
+| H5                 | 安卓               | 微信小程序         | 其他               |
+| ------------------ | ------------------ | ------------------ | ------------------ |
+| :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_minus_sign: |
 
 ## 克隆项目
 
@@ -26,15 +43,13 @@ $ pnpm i --frozen-lockfile
 
 > 可直接在 HBX 中运行和构建
 
-### CLI
-
 1. 运行到 `WEB`: `$ pnpm dev`
 2. 运行到 `微信小程序`: `$ pnpm dev:mp-weixin`
 3. 更多命令见 `package.json` 中的 `script`
 
 > 构建命令：将 `dev` 改为 `build`
 
-### 目录说明
+## 目录说明
 
 ```
 ---
@@ -55,7 +70,7 @@ $ pnpm i --frozen-lockfile
   |- util/         工具
 ```
 
-### 依赖说明
+## 依赖说明
 
 - `eslint` + `prettier` + `husky` + `lint-staged`: 团队合作必备
 - `typescript`: 用代码的方式来写注释
@@ -70,7 +85,7 @@ $ pnpm i --frozen-lockfile
 - `@uni-ku/bundle-optimizer`: 分包优化
 - `@uni-ku/root`: 根组件
 - `unplugin-auto-import`: 依赖自动导入
-- 等等...
+- ...
 
 ### 其他
 
@@ -78,5 +93,14 @@ $ pnpm i --frozen-lockfile
 - `util/messageUtil.ts`: 封装 `uni` 的反馈相关，增强使用体验
 - `util/routeUtil.ts`: 封装 `uni` 的跳转相关，增强使用体验
 - `util/storageUtil.ts`: 封装 `uni` 的 `Storage`，提供类型安全的存储操作（避免自己忘记缓存中有什么）
-- `util/styleUtil.ts` + `style/variable.scss`: 自己的调色板
-- 等等...
+- `util/styleUtil.ts` + `style/variable.scss`: 项目调色板
+- ...
+
+## 鸣谢
+
+综合全网项目而形成的最佳实践，感谢以下团队或个人为 UniApp 开发体验优化做出的贡献，排名不分先后
+
+- [uni-helper](https://github.com/uni-helper)
+- [uni-ku](https://github.com/uni-ku)
+- [unibest](https://github.com/unibest-tech/unibest)
+- ...
