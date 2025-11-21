@@ -45,7 +45,8 @@
         "dev:quickapp-webview-huawei": "univar cross-env UNI_INPUT_DIR=%cd% uni -p quickapp-webview-huawei",
         "dev:quickapp-webview-union": "univar cross-env UNI_INPUT_DIR=%cd% uni -p quickapp-webview-union",
         "preinstall": "npx -y only-allow pnpm",
-        "prepare": "husky"
+        "prepare": "husky",
+        "type-check": "vue-tsc --build"
     },
     "dependencies": {
         "@ant-design/colors": "8.0.0",

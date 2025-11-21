@@ -4,7 +4,8 @@
 import { isPlainObject } from '@/util/isUtil.ts'
 import { URLQuery } from '@/util/stringUtil.ts'
 
-export type RouteUrlEnum = (typeof PageUrlConst)[keyof typeof PageUrlConst]
+export type RouteUrlEnum = (typeof PageUrlConst)[keyof typeof PageUrlConst] | '/'
+export type TabRouteUrlEnum = SwitchTabOptions['url'] | ''
 
 // 路由传参
 export interface RouteToOptions {
@@ -59,7 +60,9 @@ export const redirectTo = (
 }
 
 // uni.switchTab 封装
-export const switchTab = (url: RouteUrlEnum): Promise<UniApp.NavigateToSuccessOptions> | void => {
+export const switchTab = (
+  url: TabRouteUrlEnum,
+): Promise<UniApp.NavigateToSuccessOptions> | void => {
   const appStore = useAppStore()
   appStore.setLatestTabUrl(url)
   if (!url) return

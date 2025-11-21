@@ -1,4 +1,7 @@
 {
+  "easycom": {
+    "autoscan": false
+  },
   "globalStyle": {
     "navigationStyle": "custom",
     "navigationBarTextStyle": "black",

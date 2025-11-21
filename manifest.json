@@ -61,6 +61,12 @@
     "runmode": "liberate",
     "nativePlugins": {}
   },
+  "app-harmony": {
+    "distribute": {}
+  },
+  "mp-harmony": {
+    "distribute": {}
+  },
   "quickapp": {},
   "mp-weixin": {
     "appid": "wx18ea457b6b4c51d3",
@@ -107,7 +113,7 @@
       "checkSiteMap": false
     },
     "usingComponents": true,
-    "libVersion": "3.8.12",
+    "libVersion": "3.11.2",
     "plugins": {
       "sendCoupon": {
         "version": "latest",

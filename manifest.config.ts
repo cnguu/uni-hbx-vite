@@ -4,7 +4,7 @@ import { loadEnv } from 'vite'
 import { getMode } from './builder/util'
 
 const envDir = fileURLToPath(new URL('./env/', import.meta.url))
-const env = loadEnv(getMode(), envDir) as unknown as Env.ImportMeta
+const env = loadEnv(getMode(), envDir) as unknown as ImportMetaEnv
 const {
   VITE_APP_TITLE,
   VITE_UNI_APPID,
@@ -78,7 +78,7 @@ export default defineManifestConfig({
   quickapp: {},
   'mp-weixin': {
     appid: VITE_MP_WECHAT_APPID,
-    libVersion: '3.8.12',
+    libVersion: '3.11.2',
     setting: {
       condition: false,
       es6: true,

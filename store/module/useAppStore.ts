@@ -1,3 +1,5 @@
+import type { TabRouteUrlEnum } from '@/util/routeUtil.ts'
+
 /**
  * 应用仓储
  */
@@ -5,8 +7,8 @@ export const useAppStore = defineStore('app', () => {
   const userStore = useUserStore()
 
   // 最新的 tab 页路径
-  const latestTabUrl = ref<string>('')
-  const setLatestTabUrl = (value: string) => {
+  const latestTabUrl = ref<TabRouteUrlEnum>('')
+  const setLatestTabUrl = (value: TabRouteUrlEnum) => {
     latestTabUrl.value = value
   }
 

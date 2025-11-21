@@ -23,7 +23,7 @@ import {
 export default ({ mode }: ConfigEnv) => {
   const isProd = mode === 'production'
   const envDir = fileURLToPath(new URL('./env/', import.meta.url))
-  const env = loadEnv(mode, envDir) as unknown as Env.ImportMeta
+  const env = loadEnv(mode, envDir) as unknown as ImportMetaEnv
   const { VITE_APP_TITLE, VITE_SERVER_PORT, VITE_SERVER_PROXY } = env
   consola.box(chalk.greenBright.bold(VITE_APP_TITLE))
   consola.info('当前环境变量:', beautifyJson(env))
@@ -46,7 +46,7 @@ export default ({ mode }: ConfigEnv) => {
             },
           },
         ],
-        dts: './type/components.d.ts',
+        dts: './dts/components.d.ts',
       }),
       AutoImport({
         imports: [
@@ -62,7 +62,7 @@ export default ({ mode }: ConfigEnv) => {
             '@/util/storageUtil.ts': ['uniStorage'],
           },
         ],
-        dts: './type/auto-import.d.ts',
+        dts: './dts/auto-import.d.ts',
         dirs: ['./store/module'],
         ignore: [],
         eslintrc: { enabled: true },
@@ -73,7 +73,7 @@ export default ({ mode }: ConfigEnv) => {
         subPackages: ['page-a'],
         exclude: ['**/component/**/**.*'],
         routeBlockLang: 'jsonc',
-        dts: './type/uni-pages.d.ts',
+        dts: './dts/uni-pages.d.ts',
         outDir: '',
         onAfterScanPages: (ctx) => {
           scanPageFilter(ctx, 'pages')
@@ -95,18 +95,18 @@ export default ({ mode }: ConfigEnv) => {
         },
         dts: {
           enable: true,
-          base: './type',
+          base: './dts',
           'async-import': {
             enable: true,
-            base: './type',
+            base: './dts',
             name: 'async-import.d.ts',
-            path: './type/async-import.d.ts',
+            path: './dts/async-import.d.ts',
           },
           'async-component': {
             enable: true,
-            base: './type',
+            base: './dts',
             name: 'async-component.d.ts',
-            path: './type/async-component.d.ts',
+            path: './dts/async-component.d.ts',
           },
         },
         logger: false,

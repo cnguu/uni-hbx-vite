@@ -20,7 +20,7 @@ $ pnpm i --frozen-lockfile
 
 复制开发环境配置 `env/.env.development.eg` => `env/.env.development`
 
-> 类型见: type/vite-env.d.ts
+> 类型见: dts/env.d.ts
 
 ## 运行与构建
 
@@ -40,6 +40,7 @@ $ pnpm i --frozen-lockfile
 ---
   |- builder/      构建相关
   |- constant/     常量相关
+  |- dts/          .d.ts相关
   |- enum/         枚举相关
   |- env/          环境变量相关
   |- hook/         钩子相关

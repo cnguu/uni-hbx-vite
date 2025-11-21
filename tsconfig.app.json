@@ -1,24 +1,42 @@
 {
     "extends": "@vue/tsconfig/tsconfig.dom.json",
-    "include": ["./**/*.ts", "./**/*.d.ts", "./**/*.vue"],
-    "exclude": [],
+    "include": [
+        "builder/**/*.ts",
+        "constant/**/*.ts",
+        "dts/**/*.d.ts",
+        "enum/**/*.ts",
+        "hook/**/*.ts",
+        "interceptor/**/*.ts",
+        "layout/**/*.vue",
+        "layout/**/*.ts",
+        "page/**/*.vue",
+        "page/**/*.ts",
+        "page-a/**/*.vue",
+        "page-a/**/*.ts",
+        "store/**/*.ts",
+        "type/**/*.ts",
+        "util/**/*.ts",
+        "App.vue",
+        "main.ts",
+        "Root.vue"
+    ],
+    "exclude": ["uni_modules", "unpackage", "dist", "node_modules"],
     "compilerOptions": {
         "esModuleInterop": true,
         "allowSyntheticDefaultImports": true,
         "moduleResolution": "Bundler",
         "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+        "lib": ["ESNext", "DOM", "DOM.Iterable"],
+        "isolatedModules": true,
         "paths": {
             "@/*": ["./*"]
         },
         "types": [
+            "@types/wechat-miniprogram",
             "@dcloudio/types",
             "@uni-helper/uni-types",
-            "@types/wechat-miniprogram",
-            "wot-design-uni/global.d.ts",
-            "z-paging/types",
-            "./type/**/*.d.ts"
-        ],
-        "lib": ["ESNext", "DOM", "DOM.Iterable"]
+            "@uni-helper/vite-plugin-uni-pages"
+        ]
     },
     "vueCompilerOptions": {
         "plugins": ["@uni-helper/uni-types/volar-plugin"]

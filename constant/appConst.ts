@@ -5,7 +5,6 @@ export const APP_BASE_INFO = {
   APP_TITLE: import.meta.env.VITE_APP_TITLE,
   VERSION_NAME: import.meta.env.VITE_VERSION_NAME,
   VERSION_CODE: Number(import.meta.env.VITE_VERSION_CODE),
-  WGT_VERSION_CODE: Number(import.meta.env.VITE_WGT_VERSION_CODE),
 }
 
 /**
