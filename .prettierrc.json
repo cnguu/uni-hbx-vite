@@ -8,10 +8,26 @@
     "endOfLine": "lf",
 
     "plugins": ["@ianvs/prettier-plugin-sort-imports"],
-    "importOrder": ["^@/", "^[./]"],
-    "importOrderParserPlugins": ["typescript", "jsx", "decorators-legacy"],
-    "importOrderTypeScriptVersion": "5.0.0",
-    "importOrderCaseSensitive": false,
+    "importOrder": [
+        "<TYPES>^(node:)",
+        "<TYPES>^@/.*$",
+        "<TYPES>^[.]",
+        "<TYPES>",
+        "",
+        "<BUILTIN_MODULES>",
+        "",
+        "<THIRD_PARTY_MODULES>",
+        "",
+        "^@/.*$",
+        "",
+        "^[.]",
+        "",
+        "^virtual:"
+    ],
+    "importOrderSafeSideEffects": ["^virtual:"],
+    "importOrderParserPlugins": ["typescript", "jsx"],
+    "importOrderTypeScriptVersion": "5.9.3",
+    "importOrderCaseSensitive": true,
 
     "overrides": [
         {

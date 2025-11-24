@@ -1,7 +1,10 @@
+import type { CacheValueType } from '@/enum/cacheEnum.ts'
+
+import { CacheKeyEnum } from '@/enum/cacheEnum.ts'
+
 /***********
  * 缓存相关 *
  **********/
-import { CacheKeyEnum, type CacheValueType } from '@/enum/cacheEnum.ts'
 
 /**
  * 存储工具类

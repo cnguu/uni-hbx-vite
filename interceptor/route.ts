@@ -1,9 +1,11 @@
 /**
  * 路由拦截
  */
+import type { RouteUrlEnum } from '@/util/routeUtil.ts'
+
 import { RouteWhiteUrlEnum } from '@/enum/routeEnum.ts'
 import { showToast } from '@/util/messageUtil.ts'
-import { navigateBack, reLaunch, type RouteUrlEnum } from '@/util/routeUtil.ts'
+import { navigateBack, reLaunch } from '@/util/routeUtil.ts'
 import { parseUrl } from '@/util/stringUtil.ts'
 
 export const interceptorOptions: UniApp.InterceptorOptions = {

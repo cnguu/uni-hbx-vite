@@ -1,6 +1,8 @@
-import { fileURLToPath, URL } from 'node:url'
+import { URL, fileURLToPath } from 'node:url'
+
 import { defineManifestConfig } from '@uni-helper/vite-plugin-uni-manifest'
 import { loadEnv } from 'vite'
+
 import { getMode } from './builder/util'
 
 const envDir = fileURLToPath(new URL('./env/', import.meta.url))

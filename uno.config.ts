@@ -1,3 +1,5 @@
+import type { Variant } from 'unocss'
+
 import {
   blue,
   cyan,
@@ -17,23 +19,24 @@ import {
 import { isMp } from '@uni-helper/uni-env'
 import { presetUni } from '@uni-helper/unocss-preset-uni'
 import presetLegacyCompat from '@unocss/preset-legacy-compat'
-import { defineConfig, transformerDirectives, transformerVariantGroup, type Variant } from 'unocss'
+import { defineConfig, transformerDirectives, transformerVariantGroup } from 'unocss'
+
 import {
   BG_COLOR,
   BORDER_COLOR,
   DISABLED_COLOR,
   DIVIDER_COLOR,
   ERROR_COLOR,
-  errorColorPalette,
   MASK_COLOR,
   SECONDARY_COLOR,
   SUCCESS_COLOR,
-  successColorPalette,
   TERTIARY_COLOR,
   TEXT_COLOR,
   THEME_COLOR,
-  themeColorPalette,
   WARN_COLOR,
+  errorColorPalette,
+  successColorPalette,
+  themeColorPalette,
   warnColorPalette,
 } from './util/styleUtil'
 

@@ -13,15 +13,14 @@ onLoad(() => {
   uni.hideTabBar()
 })
 
-onMounted(() => {
-  setTimeout(() => {
-    const token = uniStorage.get(CacheKeyEnum.TOKEN)
-    if (token) {
-      switchTab(PageUrlConst.PAGE_HOME_INDEX_PAGE)
-    } else {
-      reLaunch(PageUrlConst.PAGE_LOGIN_INDEX_PAGE)
-    }
-  }, 900)
+onMounted(async () => {
+  await sleep(900)
+  const token = uniStorage.get(CacheKeyEnum.TOKEN)
+  if (token) {
+    switchTab(PageUrlConst.PAGE_HOME_INDEX_PAGE)
+  } else {
+    reLaunch(PageUrlConst.PAGE_LOGIN_INDEX_PAGE)
+  }
 })
 </script>
 

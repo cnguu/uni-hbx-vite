@@ -1,11 +1,14 @@
+import type { PageMetaDatum } from '@uni-helper/vite-plugin-uni-pages'
+import type { ProxyOptions } from 'vite'
+
 import fs from 'node:fs'
-import { fileURLToPath, URL } from 'node:url'
-import { PageContext, type PageMetaDatum } from '@uni-helper/vite-plugin-uni-pages'
+import { URL, fileURLToPath } from 'node:url'
+
+import { PageContext } from '@uni-helper/vite-plugin-uni-pages'
 import chalk from 'chalk'
 import consola from 'consola'
 import ora from 'ora'
 import prettier from 'prettier'
-import type { ProxyOptions } from 'vite'
 
 export const getMode = (): string => {
   let ret = process.argv.includes('build') ? 'production' : 'development'
@@ -98,6 +101,7 @@ export function beautifyJson(obj: any, indent = 2) {
 }
 
 export function scanPageFilter(ctx: PageContext, inKey: 'pages' | 'subPages') {
+  // 页面文件结尾
   const pageFlag = '-page.vue'
   if (inKey === 'pages') {
     const keysToRemove: string[] = []

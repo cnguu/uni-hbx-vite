@@ -1,4 +1,7 @@
-import { fileURLToPath, URL } from 'node:url'
+import type { ConfigEnv } from 'vite'
+
+import { URL, fileURLToPath } from 'node:url'
+
 import Uni from '@uni-helper/plugin-uni'
 import { isWeb } from '@uni-helper/uni-env'
 import Components from '@uni-helper/vite-plugin-uni-components'
@@ -10,8 +13,9 @@ import chalk from 'chalk'
 import { consola } from 'consola'
 import UnoCSS from 'unocss/vite'
 import AutoImport from 'unplugin-auto-import/vite'
-import { defineConfig, loadEnv, type ConfigEnv } from 'vite'
+import { defineConfig, loadEnv } from 'vite'
 import { compression } from 'vite-plugin-compression2'
+
 import {
   beautifyJson,
   getServerProxy,

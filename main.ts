@@ -1,7 +1,10 @@
 import { createSSRApp } from 'vue'
+
 import { routeInterceptor } from '@/interceptor/route.ts'
 import { store } from '@/store'
+
 import App from './App.vue'
+
 import 'virtual:uno.css'
 
 setActivePinia(store)

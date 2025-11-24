@@ -1,5 +1,4 @@
 import { CacheKeyEnum } from '@/enum/cacheEnum.ts'
-import { uniStorage } from '@/util/storageUtil.ts'
 
 /**
  * 用户仓储
