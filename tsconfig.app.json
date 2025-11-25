@@ -2,11 +2,11 @@
     "extends": "@vue/tsconfig/tsconfig.dom.json",
     "include": [
         "builder/**/*.ts",
+        "composable/**/*.ts",
         "constant/**/*.ts",
         "dts/**/*.d.ts",
         "enum/**/*.ts",
         "hook/**/*.ts",
-        "interceptor/**/*.ts",
         "layout/**/*.vue",
         "layout/**/*.ts",
         "page/**/*.vue",

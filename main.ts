@@ -1,6 +1,6 @@
 import { createSSRApp } from 'vue'
 
-import { routeInterceptor } from '@/interceptor/route.ts'
+import { routeInterceptor } from '@/composable/route.ts'
 import { store } from '@/store'
 
 import App from './App.vue'

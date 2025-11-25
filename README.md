@@ -54,12 +54,12 @@ $ pnpm i --frozen-lockfile
 ```
 ---
   |- builder/      构建相关
+  |- composable/   逻辑复用相关
   |- constant/     常量相关
   |- dts/          .d.ts相关
   |- enum/         枚举相关
   |- env/          环境变量相关
   |- hook/         钩子相关
-  |- interceptor/  拦截相关
   |- layout/       布局相关
   |- page/         主包
   |- page-a/       分包
