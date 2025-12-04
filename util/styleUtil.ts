@@ -2,6 +2,7 @@
  * 样式相关 *
  ***********/
 import { generate } from '@ant-design/colors'
+import { FastColor } from '@ant-design/fast-color'
 
 // 主题色
 export const THEME_COLOR = '#1890ff'
@@ -37,3 +38,14 @@ export const DIVIDER_COLOR = '#0505050f'
 export const BG_COLOR = '#f7f7f7'
 // 遮罩背景色
 export const MASK_COLOR = '#00000080'
+
+/**
+ * 获取增加透明度的颜色
+ * @param color 需要透明的颜色
+ * @param opacity 透明度 0~1
+ */
+export const getOpacityColor = (color: string, opacity: number = 1): string => {
+  const fastColor = new FastColor(color)
+  fastColor.a = opacity
+  return fastColor.toRgbString()
+}

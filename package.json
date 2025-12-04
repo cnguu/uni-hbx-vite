@@ -50,6 +50,7 @@
     },
     "dependencies": {
         "@ant-design/colors": "8.0.0",
+        "@ant-design/fast-color": "3.0.0",
         "@dcloudio/uni-app": "3.0.0-4080520251106001",
         "@dcloudio/uni-app-harmony": "3.0.0-4080520251106001",
         "@dcloudio/uni-app-plus": "3.0.0-4080520251106001",

@@ -11,6 +11,9 @@ importers:
       '@ant-design/colors':
         specifier: 8.0.0
         version: 8.0.0
+      '@ant-design/fast-color':
+        specifier: 3.0.0
+        version: 3.0.0
       '@dcloudio/uni-app':
         specifier: 3.0.0-4080520251106001
         version: 3.0.0-4080520251106001(@dcloudio/types@3.4.28)(postcss@8.5.6)(rollup@4.53.2)(vue@3.4.21(typescript@5.9.3))
