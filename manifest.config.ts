@@ -77,6 +77,12 @@ export default defineManifestConfig({
     runmode: 'liberate',
     nativePlugins: {},
   },
+  'app-harmony': {
+    distribute: {},
+  },
+  'mp-harmony': {
+    distribute: {},
+  },
   quickapp: {},
   'mp-weixin': {
     appid: VITE_MP_WECHAT_APPID,
