@@ -8,10 +8,12 @@ import globals from 'globals'
 
 export default defineConfigWithVueTs(
   globalIgnores([
-    '**/dist/**',
-    '**/dist-ssr/**',
-    '**/coverage/**',
-    '**/uni_modules/**',
+    '**/node_modules/',
+    '**/dist/',
+    '**/dist-ssr/',
+    '**/coverage/',
+    '**/uni_modules/',
+    '**/unpackage/',
     'dts/async-component.d.ts',
     'dts/async-import.d.ts',
     'dts/auto-import.d.ts',

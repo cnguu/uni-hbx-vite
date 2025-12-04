@@ -20,7 +20,7 @@
         "main.ts",
         "Root.vue"
     ],
-    "exclude": ["uni_modules", "unpackage", "dist", "node_modules"],
+    "exclude": ["**/uni_modules", "**/unpackage", "**/dist", "**/node_modules"],
     "compilerOptions": {
         "esModuleInterop": true,
         "allowSyntheticDefaultImports": true,
