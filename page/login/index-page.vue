@@ -1,9 +1,15 @@
 <script setup lang="ts">
+import { routeTo } from '@/util/routeUtil.ts'
+
 definePage({
   style: {
     navigationBarTitleText: '登录',
   },
 })
+
+const toPageA = () => {
+  routeTo(PageUrlConst.PAGE_A_INDEX_PAGE)
+}
 
 onLoad(() => {
   uni.hideTabBar()
@@ -12,6 +18,8 @@ onLoad(() => {
 
 <template>
   <blank-layout>
+    <view style="height: 400px" />
     <view>登录</view>
+    <view @click="toPageA">分包</view>
   </blank-layout>
 </template>

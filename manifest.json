@@ -114,12 +114,7 @@
     },
     "usingComponents": true,
     "libVersion": "3.11.2",
-    "plugins": {
-      "sendCoupon": {
-        "version": "latest",
-        "provider": "wxf3f436ba9bd4be7b"
-      }
-    },
+    "plugins": {},
     "requiredPrivateInfos": [
       "getLocation",
       "chooseLocation",

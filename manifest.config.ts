@@ -130,10 +130,10 @@ export default defineManifestConfig({
       checkSiteMap: false,
     },
     plugins: {
-      sendCoupon: {
-        version: 'latest',
-        provider: 'wxf3f436ba9bd4be7b',
-      },
+      // sendCoupon: {
+      //   version: 'latest',
+      //   provider: 'wxf3f436ba9bd4be7b',
+      // },
     },
     usingComponents: true,
     requiredPrivateInfos: [
