@@ -3,7 +3,7 @@
 [![release](https://badgen.net/github/release/cnguu/uni-hbx-vite)](https://github.com/cnguu/uni-hbx-vite/releases)
 [![license](https://badgen.net/github/license/cnguu/uni-hbx-vite)](https://github.com/cnguu/uni-hbx-vite/blob/main/LICENSE)
 
-UniApp 项目快速启动，同时支持 HBX 运行和 CLI 运行
+uni-app 项目快速启动，同时支持 HBX 运行和 CLI 运行
 
 ## 特性
 
@@ -98,7 +98,7 @@ $ pnpm i --frozen-lockfile
 
 ## 鸣谢
 
-综合全网项目而形成的最佳实践，感谢以下团队或个人为 UniApp 开发体验优化做出的贡献，排名不分先后
+综合全网项目而形成的最佳实践，感谢以下团队或个人为 uni-app 开发体验优化做出的贡献，排名不分先后
 
 - [uni-helper](https://github.com/uni-helper)
 - [uni-ku](https://github.com/uni-ku)
