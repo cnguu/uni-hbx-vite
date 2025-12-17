@@ -2,27 +2,23 @@ import type { ConfigEnv } from 'vite'
 
 import { URL, fileURLToPath } from 'node:url'
 
-import Uni from '@uni-helper/plugin-uni'
 import { isWeb } from '@uni-helper/uni-env'
-import Components from '@uni-helper/vite-plugin-uni-components'
-import UniManifest from '@uni-helper/vite-plugin-uni-manifest'
-import UniPages from '@uni-helper/vite-plugin-uni-pages'
-import Optimization from '@uni-ku/bundle-optimizer'
-import UniKuRoot from '@uni-ku/root'
 import chalk from 'chalk'
 import { consola } from 'consola'
-import UnoCSS from 'unocss/vite'
-import AutoImport from 'unplugin-auto-import/vite'
 import { defineConfig, loadEnv } from 'vite'
-import { compression } from 'vite-plugin-compression2'
 
 import {
-  beautifyJson,
-  getServerProxy,
-  handlePageName,
-  scanPageFilter,
-  writePageConst,
-} from './builder/util'
+  UniHelperPluginUni,
+  UniHelperVitePluginUniComponents,
+  UniHelperVitePluginUniManifest,
+  UniHelperVitePluginUniPages,
+  UniKuBundleOptimizer,
+  UniKuRoot,
+  UnoCSS,
+  UnpluginAutoImport,
+  VitePluginCompression,
+} from './builder/plugin'
+import { beautifyJson, getServerProxy } from './builder/util'
 
 export default ({ mode }: ConfigEnv) => {
   const isProd = mode === 'production'
@@ -36,93 +32,15 @@ export default ({ mode }: ConfigEnv) => {
   return defineConfig({
     envDir,
     plugins: [
-      Components({
-        resolvers: [
-          {
-            type: 'component',
-            resolve: (name) => {
-              if (name.match(/^.*Layout$/)) {
-                return {
-                  name,
-                  from: `@/layout/${name}.vue`,
-                }
-              }
-            },
-          },
-        ],
-        dts: './dts/components.d.ts',
-      }),
-      AutoImport({
-        imports: [
-          'vue',
-          'uni-app',
-          {
-            unocss: ['uno'],
-          },
-          'pinia',
-          {
-            '@/constant/pageConst.ts': ['PageUrlConst'],
-            '@/util/sharedUtil.ts': ['getCurrentPage', 'sleep'],
-            '@/util/storageUtil.ts': ['uniStorage'],
-          },
-        ],
-        dts: './dts/auto-import.d.ts',
-        dirs: ['./store/module'],
-        ignore: [],
-        eslintrc: { enabled: true },
-        vueTemplate: true,
-      }),
-      UniPages({
-        dir: 'page',
-        subPackages: ['page-a'],
-        exclude: ['**/component/**/**.*'],
-        routeBlockLang: 'jsonc',
-        dts: './dts/uni-pages.d.ts',
-        outDir: '',
-        onAfterScanPages: (ctx) => {
-          scanPageFilter(ctx, 'pages')
-          scanPageFilter(ctx, 'subPages')
-        },
-        onAfterMergePageMetaData: (ctx) => {
-          handlePageName(ctx, 'pageMetaData')
-          handlePageName(ctx, 'subPageMetaData')
-        },
-        onAfterWriteFile(ctx) {
-          writePageConst(ctx)
-        },
-      }),
-      Optimization({
-        enable: {
-          optimization: true,
-          'async-import': true,
-          'async-component': true,
-        },
-        dts: {
-          enable: true,
-          base: './dts',
-          'async-import': {
-            enable: true,
-            base: './dts',
-            name: 'async-import.d.ts',
-            path: './dts/async-import.d.ts',
-          },
-          'async-component': {
-            enable: true,
-            base: './dts',
-            name: 'async-component.d.ts',
-            path: './dts/async-component.d.ts',
-          },
-        },
-        logger: false,
-      }),
-      UniKuRoot({
-        rootFileName: 'Root',
-        excludePages: ['page/launch/index-page.vue'],
-      }),
-      UniManifest(),
-      UnoCSS(),
-      Uni(),
-      isProd && isWeb && compression(),
+      UniHelperVitePluginUniComponents,
+      UnpluginAutoImport,
+      UniHelperVitePluginUniPages,
+      UniKuBundleOptimizer,
+      UniKuRoot,
+      UniHelperVitePluginUniManifest,
+      UnoCSS,
+      UniHelperPluginUni,
+      isProd && isWeb && VitePluginCompression,
     ],
     resolve: {
       alias: [
