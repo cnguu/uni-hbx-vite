@@ -35,7 +35,8 @@
             "@types/wechat-miniprogram",
             "@dcloudio/types",
             "@uni-helper/uni-types",
-            "@uni-helper/vite-plugin-uni-pages"
+            "@uni-helper/vite-plugin-uni-pages",
+            "@uni-ku/bundle-optimizer/client"
         ]
     },
     "vueCompilerOptions": {

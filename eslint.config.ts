@@ -14,8 +14,6 @@ export default defineConfigWithVueTs(
     '**/coverage/',
     '**/uni_modules/',
     '**/unpackage/',
-    'dts/async-component.d.ts',
-    'dts/async-import.d.ts',
     'dts/auto-import.d.ts',
     'dts/components.d.ts',
     'dts/uni-pages.d.ts',
