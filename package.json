@@ -73,6 +73,7 @@
         "vue-router": "4.5.1"
     },
     "devDependencies": {
+        "@cnguu/vite-plugin-uni-cdn": "2.1.0",
         "@dcloudio/types": "3.4.28",
         "@dcloudio/uni-automator": "3.0.0-4080720251210001",
         "@dcloudio/uni-cli-shared": "3.0.0-4080720251210001",

@@ -1,5 +1,6 @@
 export * from './auto-import'
 export * from './bundle-optimizer'
+export * from './cdn'
 export * from './component'
 export * from './compression'
 export * from './manifest'

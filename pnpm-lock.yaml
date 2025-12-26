@@ -75,6 +75,9 @@ importers:
         specifier: 4.5.1
         version: 4.5.1(vue@3.4.21(typescript@5.9.3))
     devDependencies:
+      '@cnguu/vite-plugin-uni-cdn':
+        specifier: 2.1.0
+        version: 2.1.0(vite@5.4.21(@types/node@24.10.1)(sass@1.78.0)(terser@5.44.1))
       '@dcloudio/types':
         specifier: 3.4.28
         version: 3.4.28
@@ -867,6 +870,15 @@ packages:
 
   '@bcoe/v8-coverage@0.2.3':
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
+
+  '@cnguu/vite-plugin-uni-cdn@2.1.0':
+    resolution: {integrity: sha512-wJyiJw9Qa0wDRIvHCf2Dn46Pz57SFgfmjokQRCGXTu9+UGTm/iy42YcUOXdUnLe5B1sArYJfuykQ25exihWS+g==}
+    peerDependencies:
+      ali-oss: '>=6.0.0'
+      vite: '>=5.0.0'
+    peerDependenciesMeta:
+      ali-oss:
+        optional: true
 
   '@dcloudio/types@3.4.28':
     resolution: {integrity: sha512-uVIRp1VLBkrL0LaGLgIS/sT3bl1zzVTKZQbfqJEQcSAvBffRdirbSh5OvOHfA1WV5lmCAGfjhKsUQouNEVUQHg==}
@@ -6282,6 +6294,10 @@ snapshots:
       '@babel/helper-validator-identifier': 7.28.5
 
   '@bcoe/v8-coverage@0.2.3': {}
+
+  '@cnguu/vite-plugin-uni-cdn@2.1.0(vite@5.4.21(@types/node@24.10.1)(sass@1.78.0)(terser@5.44.1))':
+    dependencies:
+      vite: 5.4.21(@types/node@24.10.1)(sass@1.78.0)(terser@5.44.1)
 
   '@dcloudio/types@3.4.28': {}
 

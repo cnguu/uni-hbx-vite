@@ -17,6 +17,7 @@ import {
   UnoCSS,
   UnpluginAutoImport,
   VitePluginCompression,
+  VitePluginUniCdn,
 } from './builder/plugin'
 import { beautifyJson, getServerProxy } from './builder/util'
 
@@ -24,7 +25,7 @@ export default ({ mode }: ConfigEnv) => {
   const isProd = mode === 'production'
   const envDir = fileURLToPath(new URL('./env/', import.meta.url))
   const env = loadEnv(mode, envDir) as unknown as ImportMetaEnv
-  const { VITE_APP_TITLE, VITE_SERVER_PORT, VITE_SERVER_PROXY } = env
+  const { VITE_APP_TITLE, VITE_SERVER_PORT, VITE_SERVER_PROXY, VITE_CDN_URL } = env
   consola.box(chalk.greenBright.bold(VITE_APP_TITLE))
   consola.info('当前环境变量:', beautifyJson(env))
   const UNI_PLATFORM = process.env.UNI_PLATFORM || ''
@@ -39,6 +40,7 @@ export default ({ mode }: ConfigEnv) => {
       UniKuRoot,
       UniHelperVitePluginUniManifest,
       UnoCSS,
+      VitePluginUniCdn(VITE_CDN_URL),
       UniHelperPluginUni,
       isProd && isWeb && VitePluginCompression,
     ],

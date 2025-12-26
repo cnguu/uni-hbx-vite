@@ -77,6 +77,7 @@ $ pnpm i --frozen-lockfile
 - `unocss`: 快速编写简单样式（class 起名困难症者的福音）
 - `@ant-design/colors`: 大量实践经验下的调色板
 - `enum-plus`: 增强的枚举对象
+- `@cnguu/vite-plugin-uni-cdn`: 控制静态资源 cdn
 - `@uni-helper/plugin-uni`: 让项目支持一些 `ONLY ESM` 依赖
 - `@uni-helper/uni-env`: 使 `process.env.UNI_PLATFORM` 环境判断更加易用
 - `@uni-helper/vite-plugin-uni-components`: 组件的自动导入
