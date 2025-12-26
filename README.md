@@ -82,8 +82,8 @@ $ pnpm i --frozen-lockfile
 - `@uni-helper/vite-plugin-uni-components`: 组件的自动导入
 - `@uni-helper/vite-plugin-uni-manifest`: 管理并自动生成 `manifest.json`
 - `@uni-helper/vite-plugin-uni-pages`: 管理并自动生成 `pages.json`，`-page.vue` 后缀的文件会被识别为页面
-- `@uni-ku/bundle-optimizer`: 分包优化
-- `@uni-ku/root`: 根组件
+- `@uni-ku/bundle-optimizer`: 分包自动优化，小程序开发必备
+- `@uni-ku/root`: 根组件，模拟传统的 App.vue
 - `unplugin-auto-import`: 依赖自动导入
 - ...
 
