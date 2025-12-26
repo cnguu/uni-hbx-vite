@@ -28,6 +28,8 @@ interface ImportMetaEnv {
   readonly VITE_SERVER_PORT: string
   /** 开发服务器请求代理 */
   readonly VITE_SERVER_PROXY: string
+  /** 静态资源 CDN 链接 */
+  readonly VITE_CDN_URL: string
 }
 
 interface ImportMeta {
