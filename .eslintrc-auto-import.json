@@ -102,6 +102,7 @@
     "toRefs": true,
     "toValue": true,
     "triggerRef": true,
+    "uniEvent": true,
     "uniStorage": true,
     "uno": true,
     "unref": true,

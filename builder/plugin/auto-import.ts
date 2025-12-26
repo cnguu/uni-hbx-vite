@@ -10,6 +10,7 @@ export const UnpluginAutoImport = AutoImport({
     'pinia',
     {
       '@/constant/pageConst.ts': ['PageUrlConst'],
+      '@/util/eventUtil.ts': ['uniEvent'],
       '@/util/sharedUtil.ts': ['getCurrentPage', 'sleep'],
       '@/util/storageUtil.ts': ['uniStorage'],
     },

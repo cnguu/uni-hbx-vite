@@ -90,6 +90,7 @@ $ pnpm i --frozen-lockfile
 
 ### 其他说明
 
+- `util/eventUtil.ts`: 类型安全的事件总线
 - `util/isUtil.ts`: 常见基础类型判断
 - `util/messageUtil.ts`: 封装 `uni` 的反馈相关，增强使用体验
 - `util/routeUtil.ts`: 封装 `uni` 的跳转相关，增强使用体验

@@ -91,6 +91,7 @@ declare global {
   const toRefs: typeof import('vue').toRefs
   const toValue: typeof import('vue').toValue
   const triggerRef: typeof import('vue').triggerRef
+  const uniEvent: typeof import('@/util/eventUtil.ts').uniEvent
   const uniStorage: typeof import('@/util/storageUtil.ts').uniStorage
   const uno: typeof import('unocss').uno
   const unref: typeof import('vue').unref
@@ -205,6 +206,7 @@ declare module 'vue' {
     readonly toRefs: UnwrapRef<typeof import('vue')['toRefs']>
     readonly toValue: UnwrapRef<typeof import('vue')['toValue']>
     readonly triggerRef: UnwrapRef<typeof import('vue')['triggerRef']>
+    readonly uniEvent: UnwrapRef<typeof import('@/util/eventUtil.ts')['uniEvent']>
     readonly uniStorage: UnwrapRef<typeof import('@/util/storageUtil.ts')['uniStorage']>
     readonly uno: UnwrapRef<typeof import('unocss')['uno']>
     readonly unref: UnwrapRef<typeof import('vue')['unref']>
