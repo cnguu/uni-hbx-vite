@@ -2,6 +2,11 @@
 defineOptions({
   // 空白布局
   name: 'BlankLayout',
+  options: {
+    virtualHost: true,
+    addGlobalClass: true,
+    styleIsolation: 'shared',
+  },
 })
 </script>
 
