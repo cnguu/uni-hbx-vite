@@ -1,34 +1,31 @@
-import type { CacheValueType } from '@/enum/cacheEnum.ts'
-
-import { CacheKeyEnum } from '@/enum/cacheEnum.ts'
-
 /***********
  * 缓存相关 *
  **********/
+import type { CacheKeyType, CacheValueType } from '@/enum/cacheEnum.ts'
 
 /**
  * 存储工具类
  * 提供类型安全的存储操作
  */
-export class uniStorage {
+export const uniStorage = {
   /**
    * uni.setStorageSync
    */
-  static set<K extends CacheKeyEnum>(key: K, value: CacheValueType[K]): void {
+  set<K extends CacheKeyType>(key: K, value: CacheValueType[K]): void {
     uni.setStorageSync(key, value)
-  }
+  },
 
   /**
    * uni.getStorageSync
    */
-  static get<K extends CacheKeyEnum>(key: K): CacheValueType[K] | undefined {
+  get<K extends CacheKeyType>(key: K): CacheValueType[K] | undefined {
     return uni.getStorageSync(key)
-  }
+  },
 
   /**
    * uni.removeStorageSync
    */
-  static remove<K extends CacheKeyEnum>(key: K): void {
-    return uni.removeStorageSync(key)
-  }
+  remove<K extends CacheKeyType>(key: K): void {
+    uni.removeStorageSync(key)
+  },
 }

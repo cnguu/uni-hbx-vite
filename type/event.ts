@@ -1,4 +1,4 @@
-import { EventKeyEnum } from '@/enum/eventEnum.ts'
+import type { EventKeyEnum } from '@/enum/eventEnum.ts'
 
 /** 事件传值类型 */
 export type EventParams = {

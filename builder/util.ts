@@ -160,7 +160,7 @@ export async function writePageConst(ctx: PageContext) {
     ] as PageMetaDatum[]
   ).map((page) => {
     const comment = `/** ${page.style?.navigationBarTitleText || ''} */`
-    return `${comment}\n${page.name} = '/${page.path}',\n`
+    return `${comment}\n${page.name}: '/${page.path}',\n`
   })
   try {
     const fileContent = `
@@ -169,7 +169,7 @@ export async function writePageConst(ctx: PageContext) {
      *******************************/
 
     /** 页面路径常量 */
-    export enum PageUrlConst {\n${pageConstEntries.join('\n')}\n}
+    export const PageUrlConst = {\n${pageConstEntries.join('\n')}\n} as const
     `
     const filepath = fileURLToPath(new URL('../constant/pageConst.ts', import.meta.url))
     spinner.text = chalk.cyan('页面路径常量文件: 正在格式化...')

@@ -8,4 +8,4 @@ export const RouteWhiteUrlEnum: RouteUrlEnum[] = [
   PageUrlConst.PAGE_LAUNCH_INDEX_PAGE,
   PageUrlConst.PAGE_LOGIN_INDEX_PAGE,
   PageUrlConst.PAGE_A_INDEX_PAGE,
-]
+] as const
