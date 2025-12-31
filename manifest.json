@@ -2,8 +2,8 @@
   "name": "UNI-HBX-VITE",
   "appid": "__UNI__33ED0E8",
   "description": "",
-  "versionName": "1.6.0",
-  "versionCode": "11",
+  "versionName": "1.7.0",
+  "versionCode": "12",
   "transformPx": false,
   "app-plus": {
     "usingComponents": true,
