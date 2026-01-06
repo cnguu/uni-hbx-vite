@@ -47,7 +47,8 @@ $ pnpm i --frozen-lockfile
 2. 运行到 `微信小程序`: `$ pnpm dev:mp-weixin`
 3. 更多命令见 `package.json` 中的 `script`
 
-> 构建命令：将 `dev` 改为 `build`
+> 1. 构建命令：将 `dev` 改为 `build`
+> 2. 在命令后追加 `--devtools` 启动调试工具
 
 ## 目录说明
 

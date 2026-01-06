@@ -78,6 +78,7 @@
         "@dcloudio/uni-automator": "3.0.0-4080720251210001",
         "@dcloudio/uni-cli-shared": "3.0.0-4080720251210001",
         "@dcloudio/uni-stacktracey": "3.0.0-4080720251210001",
+        "@dcloudio/uni-vue-devtools": "3.0.0-4080720251210001",
         "@dcloudio/vite-plugin-uni": "3.0.0-4080720251210001",
         "@ianvs/prettier-plugin-sort-imports": "4.7.0",
         "@tsconfig/node22": "22.0.5",
