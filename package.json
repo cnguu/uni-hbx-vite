@@ -49,7 +49,7 @@
         "type-check": "vue-tsc --build"
     },
     "dependencies": {
-        "@ant-design/colors": "8.0.0",
+        "@ant-design/colors": "8.0.1",
         "@ant-design/fast-color": "3.0.0",
         "@dcloudio/uni-app": "3.0.0-4080720251210001",
         "@dcloudio/uni-app-harmony": "3.0.0-4080720251210001",
@@ -73,7 +73,7 @@
         "vue-router": "4.5.1"
     },
     "devDependencies": {
-        "@cnguu/vite-plugin-uni-cdn": "2.1.1",
+        "@cnguu/vite-plugin-uni-cdn": "2.2.0",
         "@dcloudio/types": "3.4.28",
         "@dcloudio/uni-automator": "3.0.0-4080720251210001",
         "@dcloudio/uni-cli-shared": "3.0.0-4080720251210001",
@@ -86,7 +86,7 @@
         "@uni-helper/uni-env": "0.2.0",
         "@uni-helper/uni-types": "1.0.0-alpha.7",
         "@uni-helper/unocss-preset-uni": "0.2.11",
-        "@uni-helper/vite-plugin-uni-components": "0.2.3",
+        "@uni-helper/vite-plugin-uni-components": "0.2.6",
         "@uni-helper/vite-plugin-uni-manifest": "0.2.12",
         "@uni-helper/vite-plugin-uni-pages": "0.3.16",
         "@uni-ku/bundle-optimizer": "2.0.3",
@@ -124,7 +124,7 @@
         "unplugin-auto-import": "20.3.0",
         "vite": "5.4.21",
         "vite-plugin-compression2": "2.4.0",
-        "vue-component-type-helpers": "3.2.1",
-        "vue-tsc": "3.2.1"
+        "vue-component-type-helpers": "3.2.2",
+        "vue-tsc": "3.2.2"
     }
 }

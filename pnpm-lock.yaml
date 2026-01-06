@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@ant-design/colors':
-        specifier: 8.0.0
-        version: 8.0.0
+        specifier: 8.0.1
+        version: 8.0.1
       '@ant-design/fast-color':
         specifier: 3.0.0
         version: 3.0.0
@@ -76,8 +76,8 @@ importers:
         version: 4.5.1(vue@3.4.21(typescript@5.9.3))
     devDependencies:
       '@cnguu/vite-plugin-uni-cdn':
-        specifier: 2.1.1
-        version: 2.1.1(vite@5.4.21(@types/node@24.10.1)(sass@1.78.0)(terser@5.44.1))
+        specifier: 2.2.0
+        version: 2.2.0(vite@5.4.21(@types/node@24.10.1)(sass@1.78.0)(terser@5.44.1))
       '@dcloudio/types':
         specifier: 3.4.28
         version: 3.4.28
@@ -115,8 +115,8 @@ importers:
         specifier: 0.2.11
         version: 0.2.11(@unocss/preset-legacy-compat@65.4.3)(@unocss/preset-mini@66.5.6)(@unocss/rule-utils@66.5.6)(@unocss/vite@65.4.3(rollup@4.53.2)(vite@5.4.21(@types/node@24.10.1)(sass@1.78.0)(terser@5.44.1))(vue@3.4.21(typescript@5.9.3)))(unocss-applet@0.12.2(unocss@65.4.3(postcss@8.5.6)(rollup@4.53.2)(vite@5.4.21(@types/node@24.10.1)(sass@1.78.0)(terser@5.44.1))(vue@3.4.21(typescript@5.9.3))))(unocss@65.4.3(postcss@8.5.6)(rollup@4.53.2)(vite@5.4.21(@types/node@24.10.1)(sass@1.78.0)(terser@5.44.1))(vue@3.4.21(typescript@5.9.3)))
       '@uni-helper/vite-plugin-uni-components':
-        specifier: 0.2.3
-        version: 0.2.3(rollup@4.53.2)
+        specifier: 0.2.6
+        version: 0.2.6(rollup@4.53.2)
       '@uni-helper/vite-plugin-uni-manifest':
         specifier: 0.2.12
         version: 0.2.12(vite@5.4.21(@types/node@24.10.1)(sass@1.78.0)(terser@5.44.1))
@@ -229,11 +229,11 @@ importers:
         specifier: 2.4.0
         version: 2.4.0(rollup@4.53.2)
       vue-component-type-helpers:
-        specifier: 3.2.1
-        version: 3.2.1
+        specifier: 3.2.2
+        version: 3.2.2
       vue-tsc:
-        specifier: 3.2.1
-        version: 3.2.1(typescript@5.9.3)
+        specifier: 3.2.2
+        version: 3.2.2(typescript@5.9.3)
 
 packages:
 
@@ -241,8 +241,8 @@ packages:
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
     engines: {node: '>=6.0.0'}
 
-  '@ant-design/colors@8.0.0':
-    resolution: {integrity: sha512-6YzkKCw30EI/E9kHOIXsQDHmMvTllT8STzjMb4K2qzit33RW2pqCJP0sk+hidBntXxE+Vz4n1+RvCTfBw6OErw==}
+  '@ant-design/colors@8.0.1':
+    resolution: {integrity: sha512-foPVl0+SWIslGUtD/xBr1p9U4AKzPhNYEseXYRRo5QSzGACYZrQbe11AYJbYfAWnWSpGBx6JjBmSeugUsD9vqQ==}
 
   '@ant-design/fast-color@3.0.0':
     resolution: {integrity: sha512-eqvpP7xEDm2S7dUzl5srEQCBTXZMmY3ekf97zI+M2DHOYyKdJGH0qua0JACHTqbkRnD/KHFQP9J1uMJ/XWVzzA==}
@@ -871,8 +871,8 @@ packages:
   '@bcoe/v8-coverage@0.2.3':
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
 
-  '@cnguu/vite-plugin-uni-cdn@2.1.1':
-    resolution: {integrity: sha512-GF/mrXt0gL1ot3Pc+6i2mTt8mJhAtexNXAlfEtI5AQmJ5OzTSTPGFhpNhZeSu8PyokFLUfGkxXhyHzGGUHaumA==}
+  '@cnguu/vite-plugin-uni-cdn@2.2.0':
+    resolution: {integrity: sha512-Pp+pFxRdmG4D0Pqtl9pKEVa4fsXvg02/R2fN5V4+D/hWOBWIYckEnhYSMgALN0pCJXrIcoPyxi7zD+mcFE6xnQ==}
     peerDependencies:
       ali-oss: '>=6.0.0'
       vite: '>=5.0.0'
@@ -2139,8 +2139,8 @@ packages:
       '@unocss/vite':
         optional: true
 
-  '@uni-helper/vite-plugin-uni-components@0.2.3':
-    resolution: {integrity: sha512-in7jRYQnPkLg6W13dzz8mzHDuZC+OFc3qb8MrnmDQgniIxHfxJw8vaibL1au6gvq7ij3h6EHvhHaRytIJ2PkYw==}
+  '@uni-helper/vite-plugin-uni-components@0.2.6':
+    resolution: {integrity: sha512-0Z7agSZ9M4jv6zCrBzvUhuIGR7gb2wPepcmIBBGHsYshh32q9PtaAcDXlZRkerSdsxP8ZZBCeuJcFvlFH5QrOQ==}
 
   '@uni-helper/vite-plugin-uni-manifest@0.2.12':
     resolution: {integrity: sha512-3bAl6hEmBb7TA+yLntCAsdhAjedLNmbaDJV6gXKK/G5pOJDvO+agkU/P/Pb9DGXAhUjOZ8QbUr0fLdyVw0h4qw==}
@@ -2415,8 +2415,8 @@ packages:
       typescript:
         optional: true
 
-  '@vue/language-core@3.2.1':
-    resolution: {integrity: sha512-g6oSenpnGMtpxHGAwKuu7HJJkNZpemK/zg3vZzZbJ6cnnXq1ssxuNrXSsAHYM3NvH8p4IkTw+NLmuxyeYz4r8A==}
+  '@vue/language-core@3.2.2':
+    resolution: {integrity: sha512-5DAuhxsxBN9kbriklh3Q5AMaJhyOCNiQJvCskN9/30XOpdLiqZU9Q+WvjArP17ubdGEyZtBzlIeG5nIjEbNOrQ==}
 
   '@vue/reactivity@3.4.21':
     resolution: {integrity: sha512-UhenImdc0L0/4ahGCyEzc/pZNwVgcglGy9HVzJ1Bq2Mm9qXOpP8RyNTjookw/gOCUlXSEtuZ2fUg5nrHcoqJcw==}
@@ -5234,8 +5234,8 @@ packages:
   vscode-uri@3.1.0:
     resolution: {integrity: sha512-/BpdSx+yCQGnCvecbyXdxHDkuk55/G3xwnC0GqY4gmQ3j+A+g8kzzgB4Nk/SINjqn6+waqw3EgbVF2QKExkRxQ==}
 
-  vue-component-type-helpers@3.2.1:
-    resolution: {integrity: sha512-gKV7XOkQl4urSuLHNY1tnVQf7wVgtb/mKbRyxSLWGZUY9RK7aDPhBenTjm+i8ZFe0zC2PZeHMPtOZXZfyaFOzQ==}
+  vue-component-type-helpers@3.2.2:
+    resolution: {integrity: sha512-x8C2nx5XlUNM0WirgfTkHjJGO/ABBxlANZDtHw2HclHtQnn+RFPTnbjMJn8jHZW4TlUam0asHcA14lf1C6Jb+A==}
 
   vue-eslint-parser@10.2.0:
     resolution: {integrity: sha512-CydUvFOQKD928UzZhTp4pr2vWz1L+H99t7Pkln2QSPdvmURT0MoC4wUccfCnuEaihNsu9aYYyk+bep8rlfkUXw==}
@@ -5258,8 +5258,8 @@ packages:
     peerDependencies:
       vue: ^3.2.0
 
-  vue-tsc@3.2.1:
-    resolution: {integrity: sha512-I23Rk8dkQfmcSbxDO0dmg9ioMLjKA1pjlU3Lz6Jfk2pMGu3Uryu9810XkcZH24IzPbhzPCnkKo2rEMRX0skSrw==}
+  vue-tsc@3.2.2:
+    resolution: {integrity: sha512-r9YSia/VgGwmbbfC06hDdAatH634XJ9nVl6Zrnz1iK4ucp8Wu78kawplXnIDa3MSu1XdQQePTHLXYwPDWn+nyQ==}
     hasBin: true
     peerDependencies:
       typescript: '>=5.0.0'
@@ -5433,7 +5433,7 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.13
       '@jridgewell/trace-mapping': 0.3.31
 
-  '@ant-design/colors@8.0.0':
+  '@ant-design/colors@8.0.1':
     dependencies:
       '@ant-design/fast-color': 3.0.0
 
@@ -6296,8 +6296,9 @@ snapshots:
 
   '@bcoe/v8-coverage@0.2.3': {}
 
-  '@cnguu/vite-plugin-uni-cdn@2.1.1(vite@5.4.21(@types/node@24.10.1)(sass@1.78.0)(terser@5.44.1))':
+  '@cnguu/vite-plugin-uni-cdn@2.2.0(vite@5.4.21(@types/node@24.10.1)(sass@1.78.0)(terser@5.44.1))':
     dependencies:
+      '@vue/compiler-sfc': 3.4.21
       vite: 5.4.21(@types/node@24.10.1)(sass@1.78.0)(terser@5.44.1)
 
   '@dcloudio/types@3.4.28': {}
@@ -8121,7 +8122,7 @@ snapshots:
       '@unocss/preset-mini': 66.5.6
       '@unocss/vite': 65.4.3(rollup@4.53.2)(vite@5.4.21(@types/node@24.10.1)(sass@1.78.0)(terser@5.44.1))(vue@3.4.21(typescript@5.9.3))
 
-  '@uni-helper/vite-plugin-uni-components@0.2.3(rollup@4.53.2)':
+  '@uni-helper/vite-plugin-uni-components@0.2.6(rollup@4.53.2)':
     dependencies:
       '@antfu/utils': 0.7.10
       '@rollup/pluginutils': 5.3.0(rollup@4.53.2)
@@ -8638,7 +8639,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@vue/language-core@3.2.1':
+  '@vue/language-core@3.2.2':
     dependencies:
       '@volar/language-core': 2.4.27
       '@vue/compiler-dom': 3.5.24
@@ -11764,7 +11765,7 @@ snapshots:
 
   vscode-uri@3.1.0: {}
 
-  vue-component-type-helpers@3.2.1: {}
+  vue-component-type-helpers@3.2.2: {}
 
   vue-eslint-parser@10.2.0(eslint@9.39.2(jiti@2.6.1)):
     dependencies:
@@ -11792,10 +11793,10 @@ snapshots:
       '@vue/devtools-api': 6.6.4
       vue: 3.4.21(typescript@5.9.3)
 
-  vue-tsc@3.2.1(typescript@5.9.3):
+  vue-tsc@3.2.2(typescript@5.9.3):
     dependencies:
       '@volar/typescript': 2.4.27
-      '@vue/language-core': 3.2.1
+      '@vue/language-core': 3.2.2
       typescript: 5.9.3
 
   vue@3.4.21(typescript@5.9.3):

@@ -1,4 +1,4 @@
-import CnguuVitePluginUniCdn from '@cnguu/vite-plugin-uni-cdn'
+import { VitePluginUniCdn as CnguuVitePluginUniCdn } from '@cnguu/vite-plugin-uni-cdn'
 
 export const VitePluginUniCdn = (cdn: string) => {
   return CnguuVitePluginUniCdn({
