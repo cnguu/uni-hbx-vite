@@ -127,8 +127,8 @@ importers:
         specifier: 0.3.16
         version: 0.3.16(vite@5.4.21(@types/node@24.10.1)(sass@1.78.0)(terser@5.44.1))
       '@uni-ku/bundle-optimizer':
-        specifier: 2.0.3
-        version: 2.0.3(chokidar@3.6.0)(postcss@8.5.6)(rollup@4.53.2)(vite@5.4.21(@types/node@24.10.1)(sass@1.78.0)(terser@5.44.1))(vue@3.4.21(typescript@5.9.3))
+        specifier: 2.1.0
+        version: 2.1.0(chokidar@3.6.0)(postcss@8.5.6)(rollup@4.53.2)(vite@5.4.21(@types/node@24.10.1)(sass@1.78.0)(terser@5.44.1))(vue@3.4.21(typescript@5.9.3))
       '@uni-ku/root':
         specifier: 1.4.1
         version: 1.4.1(vite@5.4.21(@types/node@24.10.1)(sass@1.78.0)(terser@5.44.1))
@@ -2164,8 +2164,8 @@ packages:
     peerDependencies:
       vite: ^5.0.0
 
-  '@uni-ku/bundle-optimizer@2.0.3':
-    resolution: {integrity: sha512-1/fCkbFT40rt0ujg3Q+FQ7n2AT94tAL0VewL/ECD7xsZ1cyLa5NqFeHwHzrQ17IxF1gf3j9029rpJNW1dvzLrw==}
+  '@uni-ku/bundle-optimizer@2.1.0':
+    resolution: {integrity: sha512-SRKmCMYp8eqDJc63HmMBm89nt9ZX9Pme7bjqLghOLmE3ju3ugUBsREbXPJNx46MwsRY4H0416BSjH55qA9HofQ==}
     peerDependencies:
       vite: ^4.0.0 || ^5.0.0
       vue: ^3.0.0
@@ -8275,7 +8275,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@uni-ku/bundle-optimizer@2.0.3(chokidar@3.6.0)(postcss@8.5.6)(rollup@4.53.2)(vite@5.4.21(@types/node@24.10.1)(sass@1.78.0)(terser@5.44.1))(vue@3.4.21(typescript@5.9.3))':
+  '@uni-ku/bundle-optimizer@2.1.0(chokidar@3.6.0)(postcss@8.5.6)(rollup@4.53.2)(vite@5.4.21(@types/node@24.10.1)(sass@1.78.0)(terser@5.44.1))(vue@3.4.21(typescript@5.9.3))':
     dependencies:
       '@dcloudio/uni-cli-shared': 3.0.0-4020820240925001(postcss@8.5.6)(rollup@4.53.2)(vue@3.4.21(typescript@5.9.3))
       '@vue/compiler-sfc': 3.4.21
