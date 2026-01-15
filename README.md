@@ -99,6 +99,8 @@ $ pnpm i --frozen-lockfile
 - `util/styleUtil.ts` + `style/variable.scss`: 项目调色板
 - ...
 
+> 运行不起来？尝试更换 node 版本和 pnpm 版本（node: 22.21.1, pnpm: 10.20.0）
+
 ## 鸣谢
 
 综合全网项目而形成的最佳实践，感谢以下团队或个人为 uni-app 开发体验优化做出的贡献，排名不分先后
