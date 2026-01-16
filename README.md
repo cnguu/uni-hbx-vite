@@ -49,6 +49,7 @@ $ pnpm i --frozen-lockfile
 
 > 1. 构建命令：将 `dev` 改为 `build`
 > 2. 在命令后追加 `--devtools` 启动调试工具
+> 3. 在非 `WINDOWS` 环境运行时，将 `UNI_INPUT_DIR=%cd%` 中的 `%cd%` 替换成对应系统的目录语法，例如：`$PWD`
 
 ## 目录说明
 
