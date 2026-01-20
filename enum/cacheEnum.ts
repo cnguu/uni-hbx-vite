@@ -4,11 +4,10 @@
 
 /**
  * 缓存键枚举
- * 统一前缀 uhv_
  */
 export const CacheKeyEnum = {
   /** 授权令牌 */
-  TOKEN: 'uhv_token',
+  TOKEN: 'token',
 } as const
 export type CacheKeyType = (typeof CacheKeyEnum)[keyof typeof CacheKeyEnum]
 
