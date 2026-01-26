@@ -117,7 +117,7 @@ export default defineConfig({
       warn: WARN_COLOR,
       ...convertThemeColors('warn', warnColorPalette),
       error: ERROR_COLOR,
-      ...convertThemeColors('warn', errorColorPalette),
+      ...convertThemeColors('error', errorColorPalette),
 
       text: TEXT_COLOR,
       secondary: SECONDARY_COLOR,
