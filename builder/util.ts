@@ -19,7 +19,7 @@ export const getMode = (): string => {
       ret = mode
     }
   }
-  console.log(`【MODE】${ret}`)
+  consola.info(`【MODE】${ret}`)
   return ret
 }
 
