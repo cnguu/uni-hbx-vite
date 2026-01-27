@@ -49,7 +49,6 @@ $ pnpm i --frozen-lockfile
 
 > 1. 构建命令：将 `dev` 改为 `build`
 > 2. 在命令后追加 `--devtools` 启动调试工具
-> 3. 在非 `WINDOWS` 环境运行时，将 `UNI_INPUT_DIR=%cd%` 中的 `%cd%` 替换成对应系统的目录语法，例如：`$PWD`
 
 ## 目录说明
 
@@ -100,7 +99,7 @@ $ pnpm i --frozen-lockfile
 - `util/styleUtil.ts` + `style/variable.scss`: 项目调色板
 - ...
 
-> 运行不起来？尝试更换 node 版本和 pnpm 版本（node: 22.21.1, pnpm: 10.20.0）
+> 运行不起来？尝试更换 node 版本和 pnpm 版本（node: 22.22.0, pnpm: 10.28.2）
 
 ## 鸣谢
 
