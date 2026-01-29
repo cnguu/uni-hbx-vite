@@ -61,7 +61,7 @@ export default defineConfigWithVueTs(
   vueTsConfigs.recommended,
   skipFormatting,
   {
-    files: ['**/*.{js,mjs.cjs}'],
+    files: ['**/*.{js,mjs,cjs}'],
     rules: {
       'no-unused-vars': 'warn',
     },
