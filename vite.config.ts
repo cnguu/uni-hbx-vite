@@ -2,7 +2,7 @@ import type { ConfigEnv } from 'vite'
 
 import { URL, fileURLToPath } from 'node:url'
 
-import { isWeb } from '@uni-helper/uni-env'
+import { isMp, isWeb } from '@uni-helper/uni-env'
 import chalk from 'chalk'
 import { consola } from 'consola'
 import { defineConfig, loadEnv } from 'vite'
@@ -69,7 +69,7 @@ export default ({ mode }: ConfigEnv) => {
       },
     },
     build: {
-      minify: 'terser',
+      minify: isMp ? false : 'terser',
       terserOptions: {
         compress: {
           drop_console: isProd,
