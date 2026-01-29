@@ -160,9 +160,16 @@ export default defineManifestConfig({
     enableDistFileMinify: true,
     enableNodeModuleBabelTransform: true,
     styleIsolation: 'shared',
+    optimization: { subPackages: true },
   },
   'mp-baidu': {
-    usingComponents: true,
+    appid: '17767960',
+    projectname: VITE_APP_TITLE,
+    setting: {
+      autoAudits: false,
+      urlCheck: false,
+    },
+    optimization: { subPackages: true },
   },
   'mp-toutiao': {
     appid: 'testAppId',
@@ -174,6 +181,7 @@ export default defineManifestConfig({
       minified: true,
       newFeature: true,
     },
+    optimization: { subPackages: true },
   },
   'mp-xhs': {
     appid: 'touristappid',

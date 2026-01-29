@@ -137,18 +137,28 @@
     "usingComponents": true,
     "appid": "touristappid",
     "projectname": "UNI-HBX-VITE",
+    "component2": true,
     "enableAppxNg": true,
     "axmlStrictCheck": false,
     "enableParallelLoader": true,
     "enableDistFileMinify": true,
     "enableNodeModuleBabelTransform": true,
     "styleIsolation": "shared",
-    "compileOptions": {
-      "component2": true
+    "optimization": {
+      "subPackages": true
     }
   },
   "mp-baidu": {
-    "usingComponents": true
+    "usingComponents": true,
+    "appid": "17767960",
+    "projectname": "UNI-HBX-VITE",
+    "setting": {
+      "autoAudits": false,
+      "urlCheck": false
+    },
+    "optimization": {
+      "subPackages": true
+    }
   },
   "mp-toutiao": {
     "usingComponents": true,
@@ -160,6 +170,9 @@
       "postcss": false,
       "minified": true,
       "newFeature": true
+    },
+    "optimization": {
+      "subPackages": true
     }
   },
   "uniStatistics": {
