@@ -151,7 +151,15 @@ export default defineManifestConfig({
     optimization: { subPackages: true },
   },
   'mp-alipay': {
-    usingComponents: true,
+    appid: 'touristappid',
+    projectname: VITE_APP_TITLE,
+    component2: true,
+    enableAppxNg: true,
+    axmlStrictCheck: false,
+    enableParallelLoader: true,
+    enableDistFileMinify: true,
+    enableNodeModuleBabelTransform: true,
+    styleIsolation: 'shared',
   },
   'mp-baidu': {
     usingComponents: true,

@@ -134,7 +134,18 @@
     }
   },
   "mp-alipay": {
-    "usingComponents": true
+    "usingComponents": true,
+    "appid": "touristappid",
+    "projectname": "UNI-HBX-VITE",
+    "enableAppxNg": true,
+    "axmlStrictCheck": false,
+    "enableParallelLoader": true,
+    "enableDistFileMinify": true,
+    "enableNodeModuleBabelTransform": true,
+    "styleIsolation": "shared",
+    "compileOptions": {
+      "component2": true
+    }
   },
   "mp-baidu": {
     "usingComponents": true
