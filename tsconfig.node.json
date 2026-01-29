@@ -2,17 +2,13 @@
     "extends": "@tsconfig/node22/tsconfig.json",
     "include": [
         "vite.config.*",
-        "vitest.config.*",
-        "cypress.config.*",
-        "nightwatch.conf.*",
-        "playwright.config.*",
         "eslint.config.*",
         "uno.config.*",
         "manifest.config.*",
         "pages.config.*",
         "dts/env.d.ts"
     ],
-    "exclude": ["**/uni_modules", "**/unpackage", "**/dist", "**/node_modules"],
+    "exclude": ["**/uni_modules/**", "**/unpackage/**", "**/dist/**", "**/node_modules/**"],
     "compilerOptions": {
         "noEmit": true,
         "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
