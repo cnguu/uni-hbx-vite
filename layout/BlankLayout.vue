@@ -4,7 +4,6 @@ defineOptions({
   name: 'BlankLayout',
   options: {
     virtualHost: true,
-    addGlobalClass: true,
     styleIsolation: 'shared',
   },
 })

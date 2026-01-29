@@ -3,7 +3,6 @@ defineOptions({
   name: 'Root',
   options: {
     virtualHost: true,
-    addGlobalClass: true,
     styleIsolation: 'shared',
   },
 })
