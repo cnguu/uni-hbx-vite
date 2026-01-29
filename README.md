@@ -7,17 +7,17 @@ uni-app 项目快速启动，同时支持 HBX 运行和 CLI 运行
 
 ## 特性
 
-- :sparkling_heart: 零配置，开箱即用，尽可能的纯净模板
-- :sparkling_heart: 最新技术栈 [Vue3](https://github.com/vuejs/core), [Vite](https://github.com/vitejs/vite), [PNPM](https://pnpm.io), [UnoCSS](https://github.com/unocss/unocss), [TypeScript](https://www.typescriptlang.org), [Pinia](https://github.com/vuejs/pinia) ...
-- :sparkling_heart: 目录即路由，自动生成 `pages.json`
-- :sparkling_heart: 自动导入组件和依赖
+- 💖 零配置，开箱即用，尽可能的纯净模板
+- 💖 最新技术栈 [Vue3](https://github.com/vuejs/core), [Vite](https://github.com/vitejs/vite), [PNPM](https://pnpm.io), [UnoCSS](https://github.com/unocss/unocss), [TypeScript](https://www.typescriptlang.org), [Pinia](https://github.com/vuejs/pinia) ...
+- 💖 目录即路由，自动生成 `pages.json`
+- 💖 自动导入组件和依赖
 - ...
 
 ## 平台兼容性
 
-| H5                 | 安卓               | 微信小程序         | 其他               |
-| ------------------ | ------------------ | ------------------ | ------------------ |
-| :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_minus_sign: |
+| H5  | 安卓 | 微信小程序 | 支付宝小程序 | 抖音小程序 | 百度小程序 | 快手小程序 | 京东小程序 | QQ小程序 | 飞书小程序 | 小红书小程序 | 其他 |
+| :-: | :--: | :--------: | :----------: | :--------: | :--------: | :--------: | :--------: | :------: | :--------: | :----------: | :--: |
+|  √  |  √   |     √      |      -       |     √      |     -      |     -      |     -      |    -     |     -      |      ×       |  -   |
 
 ## 克隆项目
 

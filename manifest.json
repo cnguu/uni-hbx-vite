@@ -140,7 +140,16 @@
     "usingComponents": true
   },
   "mp-toutiao": {
-    "usingComponents": true
+    "usingComponents": true,
+    "appid": "testAppId",
+    "projectname": "UNI-HBX-VITE",
+    "settings": {
+      "urlCheck": false,
+      "es6": true,
+      "postcss": false,
+      "minified": true,
+      "newFeature": true
+    }
   },
   "uniStatistics": {
     "enable": false

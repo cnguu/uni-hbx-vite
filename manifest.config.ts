@@ -157,7 +157,15 @@ export default defineManifestConfig({
     usingComponents: true,
   },
   'mp-toutiao': {
-    usingComponents: true,
+    appid: 'testAppId',
+    projectname: VITE_APP_TITLE,
+    settings: {
+      urlCheck: false,
+      es6: true,
+      postcss: false,
+      minified: true,
+      newFeature: true,
+    },
   },
   'mp-xhs': {
     appid: 'touristappid',
