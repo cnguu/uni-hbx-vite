@@ -19,7 +19,7 @@ const {
 export default defineManifestConfig({
   name: VITE_APP_TITLE,
   appid: VITE_UNI_APPID,
-  description: '',
+  description: VITE_APP_TITLE,
   versionName: VITE_VERSION_NAME,
   versionCode: VITE_VERSION_CODE,
   transformPx: false,
@@ -158,6 +158,26 @@ export default defineManifestConfig({
   },
   'mp-toutiao': {
     usingComponents: true,
+  },
+  'mp-xhs': {
+    appid: 'touristappid',
+    projectname: VITE_APP_TITLE,
+    description: VITE_APP_TITLE,
+    compileType: 'miniprogram',
+    libVersion: '',
+    setting: {
+      minified: false,
+      urlCheck: false,
+      es6: true,
+      postcss: false,
+      newFeature: true,
+      bigPackageSizeSupport: true,
+      useNewCompiler: true,
+    },
+    packOptions: {
+      ignore: [],
+    },
+    optimization: { subPackages: true },
   },
   uniStatistics: {
     enable: false,

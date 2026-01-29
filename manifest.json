@@ -1,7 +1,7 @@
 {
   "name": "UNI-HBX-VITE",
   "appid": "__UNI__33ED0E8",
-  "description": "",
+  "description": "UNI-HBX-VITE",
   "versionName": "1.8.0",
   "versionCode": "16",
   "transformPx": false,
@@ -146,6 +146,28 @@
     "enable": false
   },
   "vueVersion": "3",
+  "mp-xhs": {
+    "appid": "touristappid",
+    "projectname": "UNI-HBX-VITE",
+    "description": "UNI-HBX-VITE",
+    "compileType": "miniprogram",
+    "libVersion": "",
+    "setting": {
+      "minified": false,
+      "urlCheck": false,
+      "es6": true,
+      "postcss": false,
+      "newFeature": true,
+      "bigPackageSizeSupport": true,
+      "useNewCompiler": true
+    },
+    "packOptions": {
+      "ignore": []
+    },
+    "optimization": {
+      "subPackages": true
+    }
+  },
   "locale": "zh-Hans",
   "fallbackLocale": "zh-Hans",
   "h5": {
