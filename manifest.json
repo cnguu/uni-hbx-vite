@@ -231,6 +231,26 @@
       "subPackages": true
     }
   },
+  "mp-qq": {
+    "appid": "1108100302",
+    "projectname": "UNI-HBX-VITE",
+    "setting": {
+      "urlCheck": false,
+      "es6": false,
+      "postcss": false,
+      "minified": false,
+      "newFeature": true,
+      "nodeModules": false,
+      "autoAudits": false,
+      "uploadWithSourceMap": false,
+      "uglifyFileName": true,
+      "remoteDebugLogEnable": false,
+      "prefetch": false
+    },
+    "optimization": {
+      "subPackages": true
+    }
+  },
   "locale": "zh-Hans",
   "fallbackLocale": "zh-Hans",
   "h5": {
