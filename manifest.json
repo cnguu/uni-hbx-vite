@@ -143,10 +143,7 @@
     "enableParallelLoader": true,
     "enableDistFileMinify": true,
     "enableNodeModuleBabelTransform": true,
-    "styleIsolation": "shared",
-    "optimization": {
-      "subPackages": true
-    }
+    "styleIsolation": "shared"
   },
   "mp-baidu": {
     "usingComponents": true,
@@ -196,9 +193,6 @@
     },
     "packOptions": {
       "ignore": []
-    },
-    "optimization": {
-      "subPackages": true
     }
   },
   "mp-kuaishou": {
