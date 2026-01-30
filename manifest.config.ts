@@ -159,7 +159,6 @@ export default defineManifestConfig({
     enableDistFileMinify: true,
     enableNodeModuleBabelTransform: true,
     styleIsolation: 'shared',
-    optimization: { subPackages: true },
   },
   'mp-baidu': {
     appid: '17767960',
@@ -200,7 +199,6 @@ export default defineManifestConfig({
     packOptions: {
       ignore: [],
     },
-    optimization: { subPackages: true },
   },
   'mp-kuaishou': {
     appid: 'ks1234',
