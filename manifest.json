@@ -201,6 +201,42 @@
       "subPackages": true
     }
   },
+  "mp-kuaishou": {
+    "appid": "ks1234",
+    "projectname": "UNI-HBX-VITE",
+    "compileType": "miniprogram",
+    "libVersion": "",
+    "setting": {
+      "urlCheck": false,
+      "es6": true,
+      "enhance": false,
+      "postcss": false,
+      "preloadBackgroundData": false,
+      "minified": true,
+      "newFeature": true,
+      "coverView": true,
+      "nodeModules": false,
+      "autoAudits": false,
+      "showShadowRootInWxmlPanel": true,
+      "scopeDataCheck": false,
+      "uglifyFileName": false,
+      "checkInvalidKey": true,
+      "checkSiteMap": true,
+      "uploadWithSourceMap": true,
+      "compileHotReLoad": true,
+      "babelSetting": {
+        "ignore": [],
+        "disablePlugins": [],
+        "outputPath": ""
+      },
+      "useIsolateContext": true,
+      "useCompilerModule": false,
+      "userConfirmedUseCompilerModuleSwitch": false
+    },
+    "optimization": {
+      "subPackages": true
+    }
+  },
   "locale": "zh-Hans",
   "fallbackLocale": "zh-Hans",
   "h5": {
