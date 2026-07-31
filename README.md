@@ -35,7 +35,7 @@ $ pnpm i --frozen-lockfile
 
 ## 开发准备
 
-复制开发环境配置 `env/.env.development.eg` => `env/.env.development`
+复制开发环境配置 `env/.env.development` => `env/.env.development.local`
 
 > 类型见: dts/env.d.ts
 

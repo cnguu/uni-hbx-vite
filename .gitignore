@@ -28,4 +28,3 @@ unpackage/*
 !unpackage/res/
 .eslintcache
 hybrid/
-.env.development
