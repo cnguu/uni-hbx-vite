@@ -135,6 +135,7 @@
             "ignoreDependencies": [
                 "vue",
                 "vue-router",
+                "@uni-helper/unocss-preset-uni",
                 "@unocss/eslint-config",
                 "@unocss/preset-legacy-compat",
                 "@vue/runtime-core",
