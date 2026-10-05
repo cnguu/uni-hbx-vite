@@ -44,7 +44,6 @@
         "dev:quickapp-webview": "UNI_INPUT_DIR=$INIT_CWD uni -p quickapp-webview",
         "dev:quickapp-webview-huawei": "UNI_INPUT_DIR=$INIT_CWD uni -p quickapp-webview-huawei",
         "dev:quickapp-webview-union": "UNI_INPUT_DIR=$INIT_CWD uni -p quickapp-webview-union",
-        "preinstall": "npx -y only-allow pnpm",
         "prepare": "husky",
         "type-check": "vue-tsc --build"
     },
@@ -128,7 +127,7 @@
     },
     "engines": {
         "node": "~22",
-        "pnpm": "~9"
+        "pnpm": "~10"
     },
     "pnpm": {
         "updateConfig": {
